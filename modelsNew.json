@@ -1,0 +1,169 @@
+{
+	"possibleTags":
+	{
+		"enviromentTags":
+		[
+			"Any",
+			"Aquatic",
+			"Arctic",
+			"Badlands",
+			"Coastal",
+			"Desert",
+			"Farmland",
+			"Forest",
+			"Grasslands",
+			"Hill",
+			"Marshes",
+			"Mountain",
+			"Plains",
+			"Ruins",
+			"Swamp",
+			"Underdark",
+			"Underground",
+			"Underwater",
+			"Urban"
+		],
+		"planeTags":
+		[
+			"Any",
+			"Material Plane",
+			"Astral Plane",
+			"Plane of Air",
+			"Plane of Water",
+			"Plane of Fire",
+			"Plane of Air",
+			"Feywild",
+			"Shadowfell",
+			"Sigil",
+			"Ethereal Plane",
+			"Plane of Dreams",
+			"Planar Chaos",
+			"Elysium",
+			"Arborea",			
+			"Limbo",
+			"The Abyss",
+			"Hades",
+			"The Nine Hells",
+			"Mechanus",
+			"Mount Celestia",
+			"Positive Energy Plane",
+			"Negative Energy Plane",
+			"Far Realm"
+		],
+		"SizeTags":
+		[
+			"Tiny",
+			"Small",
+			"Medium",
+			"Large",
+			"Huge",
+			"Gargantuan",
+			"No Base"
+		],
+		"CreatureTypeTags":
+		[
+			"Aberration",
+			"Beast",
+			"Celestial",
+			"Construct",
+			"Dragon",
+			"Elemental",
+			"Fey",
+			"Fiend",
+			"Giant",
+			"Humanoid",
+			"Monstrosity",
+			"Ooze",
+			"Plant",
+			"Undead",
+			"Object"
+		],
+		"CreatureClassTag":
+		[
+			"Any",
+			"Artificer",
+			"Barbarian",
+			"Bard",
+			"Beastheart",
+			"Cleric",
+			"Cook",
+			"Druid",
+			"Eidolist",
+			"Fighter",
+			"Illrigger",
+			"Monk",
+			"Mystic/Psyonic/Talent",
+			"Paladin",
+			"Ranger",
+			"Rogue",
+			"Sorcerer",
+			"Warlock",
+			"Wizard"
+		],
+		"CreatureMovementTag":
+		[
+			"Walk",
+			"Fly",
+			"Burrow",
+			"Swim",
+			"Climb",
+			"Spiderclimb",
+			"Teleport",
+			"Hover",
+			"Mount"
+		],
+		"CreatureAttackTags":
+		[
+			"Weapon",
+			"Natural Weapon",
+			"Spells",
+			"Psionics"
+		],
+		"AdditionalTag":
+		[
+			"Playable",
+			"Named NPC",
+			"Futuristic"
+		]
+	},
+	"PaintedOptions":
+	{
+		"Painters":
+		[
+			"Gerrit",
+			"Justus",
+			"Anastasia",
+			"Jasper",
+			"Hans",
+			"Joshua"
+		],
+		"PaintStatus":
+		[
+			"Prepainted",
+			"Painted",
+			"Unpainted"
+		]
+	},
+	"Minis":
+	[
+		{
+			"UID": "1",
+    		"name": "6 legged Boar",
+    		"painted": [[0],1],
+    		"source": "?",
+    		"comment": "",
+    		"imgName": "Boar, 6 legged.jpg",
+    		"tags": [
+      			"forest",
+      			"large",
+      			"monstrosity",
+      			"ride",
+      			"urban"
+    		],
+    		"statblocks": [
+      			"boar",
+      			"giant boar"
+    		]
+  		}
+	]
+}
