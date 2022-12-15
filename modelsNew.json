@@ -135,35 +135,100 @@
 			"Anastasia",
 			"Jasper",
 			"Hans",
+			"Previous Owner",
 			"Joshua"
 		],
-		"PaintStatus":
+		"Status":
 		[
 			"Prepainted",
 			"Painted",
-			"Unpainted"
+			"Unpainted",
+			"Unbuild",
+			"Still in Package"
 		]
 	},
+	"Sources":
+	[
+		"3d Printed",
+		"Games Workshop",
+		"Reaper Miniatures",
+		"Dreamblade: 45",
+		"Castle Ravenloft Board Game",
+		"Dungeon of the mad Mage Board Game",
+		"Kitbash",
+		"Mage Knight",
+		"Epic Encounters",
+		"Legend of Drizzt Board Game",
+		"?",
+		"Wrath of Ashardalon Board Game",
+		"Oakbound",
+		"Nolzurs Marvelous Unpainted Minis",
+		"Toy",
+		"Sculpted",
+		"Super Dungeon Explore",
+		"Raging Heroes",
+		"Gormiti",
+		"Alternative Armies",
+		"Dungeons & Lasers",
+		"Kings of War",
+		"Wolsung Steampunk",
+		"Conquest",
+		"Runewars The Miniatures Game",
+		"Hordes",
+		"Freebooter's Fate",
+		"Spellcrow",
+		"Zealot Miniatures",
+		"Pokemon",
+		"Icons of the Realms Minis",
+		"Heroclix",
+		"Schneekugel",
+		"Tainted Grail",
+		"Schleich",
+		"Ral Partha",
+		"Pathfinder",
+		"Malifaux",
+		"D&D Miniatures",
+		"Dust",
+		"Rackham Confrontation",
+		"Carnevale",
+		"One Piece",
+		"Bag of Cthulhu",
+		"Tabletop-Art",
+		"Hot & Dangerous",
+		"Ring of Rule",
+		"Scale75",
+		"Warmachine",
+		"Bushido the Game",
+		"Avatars of War",
+		"Metallic Monsters",
+		"Ben 10",
+		"TOTAKU"
+	]
 	"Minis":
 	[
 		{
 			"UID": "1",
     		"name": "6 legged Boar",
-    		"painted": [[0],1],
+    		"painted": 
+			{
+					"Painters":[0],
+					"Status":1
+			},
     		"source": "?",
     		"comment": "",
     		"imgName": "Boar, 6 legged.jpg",
     		"tags": [
-      			"forest",
-      			"large",
-      			"monstrosity",
-      			"ride",
-      			"urban"
+				"enviromentTags":[7,8,18],
+				"planeTags":[1],
+				"SizeTags":[3],
+				"CreatureTypeTags":[10,1],
+				"CreatureClassTag":[],
+				"CreatureMovementTag":[0,8],
+				"CreatureAttackTags":[1],
+      			"AdditionalTag":[]
     		],
-    		"statblocks": [
-      			"boar",
-      			"giant boar"
-    		]
+			"storageLocation": ""
+    		"statblocks": []
   		}
 	]
 }
