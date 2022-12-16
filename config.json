@@ -1,3 +1,7 @@
 {
-	"Edit Mode": true
+	"Edit Mode": true,
+	"File Location": "",
+	"Images Location":"",
+	"FTP?":false,
+	"FTPData":["server adress","username","password"]
 }
