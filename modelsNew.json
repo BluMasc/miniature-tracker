@@ -123,10 +123,12 @@
 		[
 			"Playable",
 			"Named NPC",
-			"Futuristic"
+			"Futuristic",
+			"Male",
+			"Female"
 		]
 	},
-	"PaintedOptions":
+	"PhysicalOptions":
 	{
 		"Painters":
 		[
@@ -145,6 +147,17 @@
 			"Unpainted",
 			"Unbuild",
 			"Still in Package"
+		],
+		"Material":
+		[
+			"Pewter",
+			"Resin",
+			"PLA",
+			"Rubber",
+			"Stone",
+			"Wood",
+			"Aluminum",
+			"Clay"
 		]
 	},
 	"Sources":
@@ -209,10 +222,12 @@
 		{
 			"UID": "1",
     		"name": "6 legged Boar",
-    		"painted": 
+    		"PhysicalOptions": 
 			{
 					"Painters":[0],
-					"Status":1
+					"Status":1,
+					"Material":[0],
+					"Kitbash Sources":[]
 			},
     		"source": "?",
     		"comment": "",
@@ -229,6 +244,8 @@
     		],
 			"storageLocation": ""
     		"statblocks": []
+			"link": ""
+			"price": -1
   		}
 	]
 }
