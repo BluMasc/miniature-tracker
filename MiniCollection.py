@@ -10,7 +10,13 @@ p = Path(__file__).with_name('config.json')
 with p.open('r') as f:
   cfg = json.load(f)
 
-values = [str(i) for i in range(20)]
+if "PySimpleGUITheme" in cfg:
+    sg.theme(cfg["PySimpleGUITheme"])
+
+with open(cfg["File Location"], 'r') as f:
+  data = json.load(f)
+
+values = sorted([[str(n["name"]),m]  for m,n in data["Minis"].items()])
 
 chooseColumn = [  [sg.Text('Models')],
             [sg.Input(key='-IN-', enable_events=True), sg.Button('Search', bind_return_key=True), sg.Button('Help')],
@@ -19,8 +25,7 @@ chooseColumn = [  [sg.Text('Models')],
                 select_mode=sg.LISTBOX_SELECT_MODE_SINGLE,
                 enable_events=True,
                 size=(60, 20),
-                key="list"),
-                sg.Column("")],
+                key="--list--")],
 
             ]
 editAddon = [

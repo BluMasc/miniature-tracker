@@ -1,7 +1,8 @@
 {
 	"Edit Mode": true,
-	"File Location": "",
+	"File Location": "C:/Users/Chrom/Documents/GitHub/miniature-tracker/modelsNew.json",
 	"Images Location":"",
 	"FTP?":false,
-	"FTPData":["server adress","username","password"]
+	"FTPData":["server adress","username","password"],
+	"PySimpleGUITheme":"DarkGrey14"
 }
