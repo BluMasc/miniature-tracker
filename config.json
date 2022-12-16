@@ -1,7 +1,7 @@
 {
 	"Edit Mode": true,
 	"File Location": "C:/Users/bluma/Documents/projects/miniature-tracker/modelsNew.json",
-	"Images Location":"",
+	"Images Location":"C:/Users/bluma/Documents/projects/miniature-tracker/pics",
 	"FTP?":false,
 	"FTPData":["server adress","username","password"],
 	"PySimpleGUITheme":"DarkGrey14"

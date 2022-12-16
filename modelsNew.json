@@ -231,7 +231,7 @@
                1
             ],
             "SizeTags":[
-               3
+               2,3
             ],
             "CreatureTypeTags":[
                10,
@@ -251,12 +251,61 @@
 
             ]
          },
-         "storageLocation":"",
+         "storageLocation":"?",
          "statblocks":[
 
          ],
-         "link":"",
+         "link":"?",
          "price":-1
+      },
+      "2":{
+         "name":"Air Elemental",
+         "PhysicalOptions":{
+            "Painters":[
+               0
+            ],
+            "Status":1,
+            "Material":[
+               7
+            ],
+            "Kitbash Sources":[
+
+            ]
+         },
+         "source":"Sculpted",
+         "comment":"",
+         "tags":{
+            "enviromentTags":[
+               0
+            ],
+            "planeTags":[
+               1,3
+            ],
+            "SizeTags":[
+               2
+            ],
+            "CreatureTypeTags":[
+               5
+            ],
+            "CreatureClassTag":[
+
+            ],
+            "CreatureMovementTag":[
+               1
+            ],
+            "CreatureAttackTags":[
+               1,2
+            ],
+            "AdditionalTag":[
+
+            ]
+         },
+         "storageLocation":"?",
+         "statblocks":[
+
+         ],
+         "link":"?",
+         "price":0
       }
    }
 }
