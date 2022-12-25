@@ -1,33 +1,15 @@
 [
   {
-    "name": "6 legged Boar",
-    "painted": "Gerrit",
-    "source": "?",
-    "comment": "",
-    "imgName": "Boar, 6 legged.jpg",
-    "tags": [
-      "forest",
-      "large",
-      "monstrosity",
-      "ride",
-      "urban"
-    ],
-    "statblocks": [
-      "boar",
-      "giant boar"
-    ]
-  },
-  {
     "name": "Aarakocra Warrior",
     "painted": "Gerrit",
     "source": "Gormiti: Neorganic: Soldaten des Volkes des Himmels",
     "comment": "",
     "imgName": "Aarakocra, Warrior.jpg",
     "tags": [
-      "air",
+      "plane of air",
       "elemental",
       "fly",
-      "flying",
+      "fly",
       "humanoid",
       "medium",
       "playable",
@@ -46,10 +28,10 @@
     "comment": "",
     "imgName": "Aarakocra, Warrior2.jpg",
     "tags": [
-      "air",
+      "plane of air",
       "elemental",
       "fly",
-      "flying",
+      "fly",
       "humanoid",
       "medium",
       "playable",
@@ -62,30 +44,13 @@
     ]
   },
   {
-    "name": "Air Elemental",
-    "painted": "Gerrit",
-    "source": "Clay Sculpted",
-    "comment": "",
-    "imgName": "Elemental, Air.jpg",
-    "tags": [
-      "air",
-      "elemental",
-      "medium",
-      "tornado"
-    ],
-    "statblocks": [
-      "air elemental",
-      "storm spirit"
-    ]
-  },
-  {
     "name": "Ajawo Armored Enforcer",
     "painted": "Gerrit",
     "source": "Raging Heroes: Kristina Karlstein Armoured Division Officer (IE) ",
     "comment": "",
     "imgName": "Human, Hero.jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "character",
       "human",
       "humanoid",
@@ -110,7 +75,7 @@
       "large",
       "monsterhunter",
       "pest",
-      "ride"
+      "mount"
     ],
     "statblocks": [
       "kobold",
@@ -145,7 +110,7 @@
     "tags": [
       "beast",
       "medium",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -158,7 +123,7 @@
     "tags": [
       "beast",
       "medium",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -171,7 +136,7 @@
     "tags": [
       "beast",
       "medium",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -345,7 +310,7 @@
     "comment": "",
     "imgName": "Astral Reaver.jpg",
     "tags": [
-      "alien",
+      "aberration",
       "humanoid",
       "medium",
       "weapon"
@@ -362,7 +327,7 @@
     "imgName": "Asylum Escapee.jpg",
     "tags": [
       "character",
-      "humaoid",
+      "humanoid",
       "medium",
       "mutant"
     ],
@@ -377,7 +342,7 @@
     "tags": [
       "construct",
       "golem",
-      "humaoid",
+      "humanoid",
       "medium",
       "robot"
     ],
@@ -439,7 +404,7 @@
       "aberration",
       "gargantuan",
       "god",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -452,7 +417,7 @@
     "tags": [
       "dwarf",
       "elemental",
-      "fire",
+      "plane of fire",
       "humanoid",
       "medium"
     ],
@@ -467,7 +432,7 @@
     "tags": [
       "dwarf",
       "elemental",
-      "fire",
+      "plane of fire",
       "humanoid",
       "medium"
     ],
@@ -531,7 +496,7 @@
     "comment": "",
     "imgName": "Badger Gray.jpg",
     "tags": [
-      "animal",
+      "beast",
       "beast",
       "fey",
       "medium"
@@ -601,7 +566,7 @@
       "large",
       "monsterhunter",
       "monstrosity",
-      "savana"
+      "plains"
     ],
     "statblocks": [
       "Baroth",
@@ -617,7 +582,7 @@
     "tags": [
       "construct",
       "elemental",
-      "fire",
+      "plane of fire",
       "large",
       "magma",
       "medium"
@@ -826,7 +791,7 @@
     "tags": [
       "boss",
       "character",
-      "humaoid",
+      "humanoid",
       "large",
       "medium",
       "mushroom",
@@ -841,7 +806,7 @@
     "comment": "",
     "imgName": "bird fairy.jpg",
     "tags": [
-      "angel",
+      "celestial",
       "fairy",
       "fey",
       "humanoid",
@@ -870,7 +835,7 @@
     "comment": "",
     "imgName": "Skeleton, Burning.jpg",
     "tags": [
-      "fire",
+      "plane of fire",
       "medium",
       "undead"
     ],
@@ -885,7 +850,7 @@
     "comment": "",
     "imgName": "Skeleton, Burning2.jpg",
     "tags": [
-      "fire",
+      "plane of fire",
       "medium",
       "undead"
     ],
@@ -900,7 +865,7 @@
     "comment": "",
     "imgName": "Skeleton, Burning3.jpg",
     "tags": [
-      "fire",
+      "plane of fire",
       "medium",
       "undead"
     ],
@@ -916,7 +881,7 @@
     "imgName": "Snake, Fire.jpg",
     "tags": [
       "elemental",
-      "fire",
+      "plane of fire",
       "medium"
     ],
     "statblocks": [
@@ -1133,12 +1098,12 @@
     "comment": "",
     "imgName": "Valkyrie, Bird.jpg",
     "tags": [
-      "air",
+      "plane of air",
       "elemental",
       "fly",
       "humanoid",
       "medium",
-      "mountains"
+      "mountain"
     ],
     "statblocks": []
   },
@@ -1150,7 +1115,7 @@
     "imgName": "Bob.jpg",
     "tags": [
       "character",
-      "humaoid",
+      "humanoid",
       "medium",
       "stargrave"
     ],
@@ -1189,7 +1154,7 @@
     "comment": "",
     "imgName": "boxer.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "nose"
     ],
@@ -1205,7 +1170,7 @@
       "assassin",
       "character",
       "elemental",
-      "fire",
+      "plane of fire",
       "genasi",
       "humanoid",
       "medium"
@@ -1222,7 +1187,7 @@
       "medium",
       "beast",
       "fey",
-      "animal"
+      "beast"
     ],
     "statblocks": []
   },
@@ -1233,10 +1198,10 @@
     "comment": "",
     "imgName": "Bulette.jpg",
     "tags": [
-      "grassland",
+      "grasslands",
       "large",
       "monstrosity",
-      "mountains"
+      "mountain"
     ],
     "statblocks": []
   },
@@ -1247,7 +1212,7 @@
     "comment": "",
     "imgName": "Revenant, Burnt.jpg",
     "tags": [
-      "fire",
+      "plane of fire",
       "medium",
       "undead"
     ],
@@ -1274,7 +1239,7 @@
     "comment": "",
     "imgName": "Beast, Caged.jpg",
     "tags": [
-      "dugeon",
+      "dungeon",
       "large",
       "monstrosity",
       "mutant"
@@ -1499,7 +1464,7 @@
     "comment": "",
     "imgName": "civilian boy.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1512,7 +1477,7 @@
     "comment": "",
     "imgName": "civilian girl.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1525,7 +1490,7 @@
     "comment": "",
     "imgName": "civilian grandpa.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1538,7 +1503,7 @@
     "comment": "",
     "imgName": "civilian granny.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1551,7 +1516,7 @@
     "comment": "",
     "imgName": "civilian pregante.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1564,7 +1529,7 @@
     "comment": "",
     "imgName": "civilian sitting.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1577,7 +1542,7 @@
     "comment": "",
     "imgName": "civilian drunk.jpg",
     "tags": [
-      "humaoid",
+      "humanoid",
       "medium",
       "shade"
     ],
@@ -1635,7 +1600,7 @@
     "tags": [
       "clod",
       "elemental",
-      "ice",
+      "cold",
       "medium",
       "sword",
       "weapon"
@@ -1835,7 +1800,7 @@
     "tags": [
       "medium",
       "monstrosity",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -1872,7 +1837,7 @@
       "clod",
       "elemental",
       "large",
-      "ride"
+      "mount"
     ],
     "statblocks": []
   },
@@ -1886,7 +1851,7 @@
       "clod",
       "elemental",
       "large",
-      "ride"
+      "mount"
     ],
     "statblocks": []
   },
@@ -2080,7 +2045,7 @@
     "imgName": "Eagle.jpg",
     "tags": [
       "beast",
-      "flying",
+      "fly",
       "medium"
     ],
     "statblocks": []
@@ -2092,7 +2057,7 @@
     "comment": "Werbear",
     "imgName": "Earthen Grasp.jpg",
     "tags": [
-      "earth",
+      "plane of earth",
       "elemental",
       "reminder",
       "spell"
@@ -2122,7 +2087,7 @@
     "tags": [
       "desert",
       "elemental",
-      "fire",
+      "plane of fire",
       "genie",
       "large"
     ],
@@ -2285,7 +2250,7 @@
     "tags": [
       "giant",
       "large",
-      "mountains"
+      "mountain"
     ],
     "statblocks": []
   },
@@ -2311,7 +2276,7 @@
     "comment": "",
     "imgName": "Feral Mummy.jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "human",
       "medium",
       "undead"
@@ -2421,10 +2386,10 @@
     "imgName": "floating horror brain.jpg",
     "tags": [
       "aberration",
-      "flying",
+      "fly",
       "medium",
       "plant",
-      "smal"
+      "small"
     ],
     "statblocks": []
   },
@@ -2436,10 +2401,10 @@
     "imgName": "floating horror vine.jpg",
     "tags": [
       "aberration",
-      "flying",
+      "fly",
       "medium",
       "plant",
-      "smal"
+      "small"
     ],
     "statblocks": []
   },
@@ -2534,7 +2499,7 @@
     "imgName": "Frostweaver.jpg",
     "tags": [
       "beast",
-      "frost",
+      "cold",
       "huge",
       "large",
       "monstrosity",
@@ -2745,7 +2710,7 @@
       "jungle",
       "large",
       "monstrosity",
-      "ride"
+      "mount"
     ],
     "statblocks": []
   },
@@ -2807,7 +2772,7 @@
       "beast",
       "medium",
       "small",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -3041,7 +3006,7 @@
     "imgName": "Giri.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
       "small"
     ],
@@ -3055,7 +3020,7 @@
     "imgName": "Giri2.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
       "small"
     ],
@@ -3069,7 +3034,7 @@
     "imgName": "Giri3.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
       "small"
     ],
@@ -3083,7 +3048,7 @@
     "imgName": "Giri4.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
       "small"
     ],
@@ -3097,7 +3062,7 @@
     "imgName": "Giri5.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
       "small"
     ],
@@ -3139,7 +3104,7 @@
     "imgName": "bayern goblin.jpg",
     "tags": [
       "goblinoid",
-      "humaoid",
+      "humanoid",
       "medium",
       "small",
       "beer",
@@ -3210,7 +3175,7 @@
       "leviathan",
       "monster hunter",
       "monstrosity",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -3281,7 +3246,7 @@
     "imgName": "Goro.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "large",
       "monstrosity"
     ],
@@ -3351,7 +3316,7 @@
       "medium",
       "beast",
       "fey",
-      "animal"
+      "beast"
     ],
     "statblocks": []
   },
@@ -3433,7 +3398,7 @@
     "imgName": "Grindylow 1.jpg",
     "tags": [
       "goblinoid",
-      "water",
+      "aquatic",
       "squid",
       "humanoid",
       "medium"
@@ -3448,7 +3413,7 @@
     "imgName": "Grindylow 2.jpg",
     "tags": [
       "goblinoid",
-      "water",
+      "aquatic",
       "squid",
       "humanoid",
       "medium"
@@ -3534,13 +3499,13 @@
     "statblocks": []
   },
   {
-    "name": "Gunslinger",
+    "name": "Adis, Human Gunslinger",
     "painted": "Gerrit",
     "source": "Hot \u0026 Dangerous: Octavia, Anno Domini 1666 girl",
     "comment": "",
     "imgName": "Adis.jpg",
     "tags": [
-      "adis",
+      "gunslinger",
       "fighter",
       "bard",
       "humanoid",
@@ -3688,7 +3653,7 @@
       "beast",
       "medium",
       "monstrosity",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -3714,7 +3679,7 @@
     "imgName": "Insect Man.jpg",
     "tags": [
       "forest",
-      "humaoid",
+      "humanoid",
       "jungle",
       "medium"
     ],
@@ -3928,9 +3893,9 @@
       "aberration",
       "dragon",
       "forest",
-      "grassland",
+      "grasslands",
       "medium",
-      "mountains"
+      "mountain"
     ],
     "statblocks": []
   },
@@ -3942,9 +3907,9 @@
     "imgName": "Jackalope.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
-      "mountains",
+      "mountain",
       "small"
     ],
     "statblocks": []
@@ -3958,7 +3923,7 @@
     "tags": [
       "humanoid",
       "wizard",
-      "xyn",
+      "jungle",
       "medium",
       "bbeg"
     ],
@@ -4000,7 +3965,7 @@
     "imgName": "Kaylee Reid.jpg",
     "tags": [
       "character",
-      "humaoid",
+      "humanoid",
       "medium",
       "stargrave"
     ],
@@ -4014,7 +3979,7 @@
     "imgName": "kitsune.jpg",
     "tags": [
       "fox",
-      "humaoid",
+      "humanoid",
       "kiang",
       "medium"
     ],
@@ -4384,7 +4349,7 @@
     "comment": "",
     "imgName": "Kobold Queen.jpg",
     "tags": [
-      "flying",
+      "fly",
       "humanoid",
       "medium",
       "monstrosity",
@@ -4679,7 +4644,7 @@
       "large",
       "lizard",
       "red",
-      "ride",
+      "mount",
       "small"
     ],
     "statblocks": []
@@ -4709,7 +4674,7 @@
       "dragon",
       "large",
       "monsterhunter",
-      "water"
+      "aquatic"
     ],
     "statblocks": [
       "Lagiacrus"
@@ -4724,7 +4689,7 @@
     "tags": [
       "construct",
       "elemental",
-      "fire",
+      "plane of fire",
       "large",
       "magma",
       "medium"
@@ -4741,7 +4706,7 @@
       "beast",
       "medium",
       "monstrosity",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -4770,7 +4735,7 @@
       "humanoid",
       "large",
       "medium",
-      "spellcasting",
+      "spellcaster",
       "undead"
     ],
     "statblocks": []
@@ -4813,7 +4778,7 @@
       "fish",
       "medium",
       "small",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -4892,7 +4857,7 @@
       "lizardfolk",
       "medium",
       "spellcaster",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -5049,7 +5014,7 @@
     "comment": "",
     "imgName": "Lava Basilisk.jpg",
     "tags": [
-      "fire",
+      "plane of fire",
       "medium",
       "monstrosity"
     ],
@@ -5159,7 +5124,7 @@
     "imgName": "Mikami Arata.jpg",
     "tags": [
       "character",
-      "humaoid",
+      "humanoid",
       "medium",
       "stargrave"
     ],
@@ -5219,8 +5184,8 @@
     "comment": "",
     "imgName": "Mirror Devil.jpg",
     "tags": [
-      "crystal",
-      "earth",
+      "psionics",
+      "plane of earth",
       "elemental",
       "medium"
     ],
@@ -5234,7 +5199,7 @@
     "imgName": "Mousefolk6.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5250,7 +5215,7 @@
     "imgName": "Mousefolk5.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5266,7 +5231,7 @@
     "imgName": "Mousefolk4.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5282,7 +5247,7 @@
     "imgName": "Mousefolk3.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5298,7 +5263,7 @@
     "imgName": "Mousefolk2.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5314,7 +5279,7 @@
     "imgName": "Mousefolk1.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5330,7 +5295,7 @@
     "imgName": "Mouseling, Assassin.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5346,7 +5311,7 @@
     "imgName": "MousefolkBarkeeper.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5362,7 +5327,7 @@
     "imgName": "MousefolkBarmaid.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5378,7 +5343,7 @@
     "imgName": "Mouseling, Ranger.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5394,7 +5359,7 @@
     "imgName": "Mouseling, Druid.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5410,7 +5375,7 @@
     "imgName": "MousefolkFriends.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5426,7 +5391,7 @@
     "imgName": "Mouseling, Female Ranger.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5442,7 +5407,7 @@
     "imgName": "Mouseling, Thieve.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5458,7 +5423,7 @@
     "imgName": "Mouseling, Bowman.jpg",
     "tags": [
       "forest",
-      "grassland",
+      "grasslands",
       "humanoid",
       "mouseling",
       "playable",
@@ -5473,7 +5438,7 @@
     "comment": "",
     "imgName": "Mummy, Leader.jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "human",
       "medium",
       "undead"
@@ -5487,7 +5452,7 @@
     "comment": "",
     "imgName": "Mummy, Lich.jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "human",
       "medium",
       "undead"
@@ -5501,7 +5466,7 @@
     "comment": "",
     "imgName": "Mummy, Warrior.jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "human",
       "medium",
       "undead"
@@ -5515,7 +5480,7 @@
     "comment": "",
     "imgName": "Mummy, Warrior (1).jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "human",
       "medium",
       "undead"
@@ -5529,7 +5494,7 @@
     "comment": "",
     "imgName": "Mummy, Warrior (2).jpg",
     "tags": [
-      "ajawo",
+      "jungle",
       "human",
       "medium",
       "undead"
@@ -5573,7 +5538,7 @@
     "comment": "",
     "imgName": "Aligator, Mutated.jpg",
     "tags": [
-      "animal",
+      "beast",
       "large",
       "monstrosity",
       "mutant",
@@ -5711,7 +5676,7 @@
     "imgName": "Orle.jpg",
     "tags": [
       "character",
-      "humaoid",
+      "humanoid",
       "medium",
       "stargrave"
     ],
@@ -5780,10 +5745,10 @@
     "imgName": "Griffon, Peacock.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "jungle",
       "monstrosity",
-      "mountains",
+      "mountain",
       "small"
     ],
     "statblocks": []
@@ -6046,7 +6011,7 @@
     "comment": "",
     "imgName": "Phase Spider 1.jpg",
     "tags": [
-      "ethereal",
+      "ethereal plane",
       "ghost",
       "large",
       "monstrosity",
@@ -6061,7 +6026,7 @@
     "comment": "",
     "imgName": "Phase Spider 2.jpg",
     "tags": [
-      "ethereal",
+      "ethereal plane",
       "ghost",
       "large",
       "monstrosity",
@@ -6076,7 +6041,7 @@
     "comment": "",
     "imgName": "Phase Spider 3.jpg",
     "tags": [
-      "ethereal",
+      "ethereal plane",
       "ghost",
       "large",
       "monstrosity",
@@ -6093,7 +6058,7 @@
     "tags": [
       "celestial",
       "elemental",
-      "fire",
+      "plane of fire",
       "fly",
       "huge"
     ],
@@ -6149,7 +6114,7 @@
     "imgName": "Giri, Pink.jpg",
     "tags": [
       "familiar",
-      "grassland",
+      "grasslands",
       "monstrosity",
       "small"
     ],
@@ -6224,7 +6189,7 @@
     "tags": [
       "giant",
       "large",
-      "mountains",
+      "mountain",
       "troll"
     ],
     "statblocks": []
@@ -6345,7 +6310,7 @@
       "medium",
       "playable",
       "pokemon",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -6361,7 +6326,7 @@
       "medium",
       "playable",
       "pokemon",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -6377,7 +6342,7 @@
       "medium",
       "playable",
       "pokemon",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -6406,7 +6371,7 @@
       "beast",
       "familiar",
       "small",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -6419,7 +6384,7 @@
     "tags": [
       "dragon",
       "large",
-      "mountains",
+      "mountain",
       "underdark",
       "urban"
     ],
@@ -6506,7 +6471,6 @@
     "tags": [
       "large",
       "construct",
-      "arcane",
       "aberration"
     ],
     "statblocks": []
@@ -6725,7 +6689,7 @@
       "humanoid",
       "large",
       "medium",
-      "pirat",
+      "pirate",
       "shapechanger",
       "werbear"
     ],
@@ -6828,7 +6792,7 @@
     "comment": "",
     "imgName": "Rock Warrior.jpg",
     "tags": [
-      "earth",
+      "plane of earth",
       "elemental",
       "huge",
       "weapon"
@@ -6842,7 +6806,7 @@
     "comment": "",
     "imgName": "Rock Warrior1.jpg",
     "tags": [
-      "earth",
+      "plane of earth",
       "elemental",
       "huge",
       "weapon"
@@ -6962,7 +6926,7 @@
     "statblocks": []
   },
   {
-    "name": "Scorpion Tiefling",
+    "name": "Lira Okares, Scorpion Tiefling",
     "painted": "Gerrit",
     "source": "Kitbash",
     "comment": "",
@@ -6971,8 +6935,7 @@
       "character",
       "devil",
       "fiend",
-      "humaoid",
-      "lira",
+      "humanoid",
       "medium",
       "okares",
       "tiefling"
@@ -6990,9 +6953,9 @@
       "dragon",
       "huge",
       "humanoid",
-      "ride",
+      "mount",
       "triton",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -7007,9 +6970,9 @@
       "dragon",
       "huge",
       "humanoid",
-      "ride",
+      "mount",
       "triton",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -7024,9 +6987,9 @@
       "dragon",
       "huge",
       "humanoid",
-      "ride",
+      "mount",
       "triton",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -7040,7 +7003,7 @@
       "giant",
       "humanoid",
       "medium",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -7054,7 +7017,7 @@
       "giant",
       "humanoid",
       "medium",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -7083,7 +7046,7 @@
     "tags": [
       "dragon",
       "large",
-      "water",
+      "aquatic",
       "weapon"
     ],
     "statblocks": []
@@ -7346,7 +7309,7 @@
     "tags": [
       "elemental",
       "familiar",
-      "fire",
+      "plane of fire",
       "small"
     ],
     "statblocks": []
@@ -7531,7 +7494,6 @@
     "imgName": "Worm Wizard.jpg",
     "tags": [
       "aberration",
-      "alien",
       "humanoid",
       "medium"
     ],
@@ -7785,7 +7747,7 @@
       "fly",
       "large",
       "weapon",
-      "mountains"
+      "mountain"
     ],
     "statblocks": []
   },
@@ -7840,7 +7802,7 @@
     "tags": [
       "aberration",
       "medium",
-      "water"
+      "aquatic"
     ],
     "statblocks": []
   },
@@ -7925,8 +7887,8 @@
     "imgName": "Tiger.jpg",
     "tags": [
       "beast",
-      "grassland",
-      "jungel",
+      "grasslands",
+      "jungle",
       "medium"
     ],
     "statblocks": []
@@ -8285,8 +8247,8 @@
       "cursed",
       "humanoid",
       "medium",
-      "psionic",
-      "psyonic",
+      "psionics",
+      "psionics",
       "redclaw",
       "shapechanger"
     ],
@@ -8302,8 +8264,8 @@
       "cursed",
       "humanoid",
       "medium",
-      "psionic",
-      "psyonic",
+      "psionics",
+      "psionics",
       "redclaw",
       "shapechanger"
     ],
@@ -8319,8 +8281,8 @@
       "cursed",
       "humanoid",
       "medium",
-      "psionic",
-      "psyonic",
+      "psionics",
+      "psionics",
       "redclaw",
       "shapechanger"
     ],
@@ -8336,8 +8298,8 @@
       "cursed",
       "humanoid",
       "medium",
-      "psionic",
-      "psyonic",
+      "psionics",
+      "psionics",
       "redclaw",
       "shapechanger"
     ],
@@ -8353,8 +8315,8 @@
       "cursed",
       "humanoid",
       "medium",
-      "psionic",
-      "psyonic",
+      "psionics",
+      "psionics",
       "redclaw",
       "shapechanger"
     ],
@@ -8498,7 +8460,7 @@
     "comment": "",
     "imgName": "Worm Swarm.jpg",
     "tags": [
-      "beasts",
+      "beast",
       "medium",
       "swarm"
     ],
@@ -8563,7 +8525,7 @@
     "comment": "",
     "imgName": "Xorn 1.jpg",
     "tags": [
-      "earth",
+      "plane of earth",
       "elemental",
       "medium",
       "monstrosity"
@@ -8577,7 +8539,7 @@
     "comment": "",
     "imgName": "Xorn 2.jpg",
     "tags": [
-      "earth",
+      "plane of earth",
       "elemental",
       "medium",
       "monstrosity"
@@ -8650,7 +8612,7 @@
       "medium",
       "monsterhunter",
       "monstrosity",
-      "savana",
+      "plains",
       "young"
     ],
     "statblocks": []

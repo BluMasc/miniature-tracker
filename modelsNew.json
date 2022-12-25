@@ -20,7 +20,8 @@
          "Underground",
          "Underwater",
          "Urban",
-				 "Jungle"
+				 "Jungle",
+         "Dungeon"
       ],
       "planeTags":[
          "Any",
@@ -29,7 +30,7 @@
          "Plane of Air",
          "Plane of Water",
          "Plane of Fire",
-         "Plane of Air",
+         "Plane of Earth",
          "Feywild",
          "Shadowfell",
          "Sigil",
@@ -93,8 +94,17 @@
          "Rogue",
          "Sorcerer",
          "Warlock",
-         "Wizard"
-      ],
+         "Wizard",
+         "Gunslinger",
+         "Assassin",
+         "Doctor",
+         "Inquisitive",
+         "Necromancer",
+         "Pirate",
+         "Spellcaster",
+         "Tinkerer",
+         "Witch"
+       ],
       "CreatureMovementTag":[
          "Walk",
          "Fly",
@@ -110,15 +120,114 @@
          "Weapon",
          "Natural Weapon",
          "Spells",
-         "Psionics"
+         "Psionics",
+         "Ranged"
+      ],
+      "SpeciesTag":[
+        "Beholder",
+        "Bullywug",
+        "Bugbear",
+        "Changeling",
+        "Clod",
+        "Cobalt",
+        "Cow",
+        "Crocodile",
+        "Demon",
+        "Devil",
+        "Dinosaur",
+        "Dog",
+        "Drake",
+        "Draugr",
+        "Bat",
+        "Banshee",
+        "Blight",
+        "Dwarf",
+        "Elf",
+        "Fairy",
+        "Drow",
+        "Fish",
+        "Fox",
+        "Frog",
+        "Genasi",
+        "Genie",
+        "Ghast",
+        "Ghost",
+        "Girros",
+        "Gnome",
+        "Goat",
+        "Goblin",
+        "Goblinoid",
+        "God",
+        "Golem",
+        "Goliath",
+        "Grung",
+        "Hag",
+        "Halfling",
+        "Human",
+        "Kiang",
+        "Kobold",
+        "Leviatham",
+        "Lizard",
+        "Lizardfolk",
+        "Mindflayer",
+        "Mouseling",
+        "Mushroom",
+        "Mutant",
+        "Myconid",
+        "Nurgle",
+        "Nychterid",
+        "Orc",
+        "Owl",
+        "Quori",
+        "Reptile",
+        "Robot",
+        "Scorpion",
+        "Shade",
+        "Sheep",
+        "Skeleton",
+        "Snake",
+        "Spellweaver",
+        "Spider",
+        "Squid",
+        "Tabaxi",
+        "Tiefling",
+        "Toad",
+        "Triton",
+        "Troll",
+        "Vampire",
+        "Warforged",
+        "Witchknife",
+        "Wraith",
+        "Zombie"
       ],
       "AdditionalTag":[
          "Playable",
          "Named NPC",
          "Futuristic",
          "Male",
-         "Female"
-      ]
+         "Female",
+         "Adult",
+         "Child",
+         "Young",
+         "BBEG",
+         "Cursed",
+         "Familiar",
+         "Pest",
+         "Blue",
+         "Platinum",
+         "Red",
+         "Shapechanger",
+         "Shadow",
+         "Silver",
+         "Stargrave",
+         "Statue",
+         "Swarm",
+         "White",
+         "Yellow",
+         "Bronze",
+         "Gray",
+         "Green"
+       ]
    },
    "PhysicalOptions":{
       "Painters":[
@@ -247,6 +356,9 @@
             "CreatureAttackTags":[
                1
             ],
+            "SpeciesTag":[
+
+            ],
             "AdditionalTag":[
 
             ]
@@ -295,6 +407,9 @@
             ],
             "CreatureAttackTags":[
                1,2
+            ],
+            "SpeciesTag":[
+
             ],
             "AdditionalTag":[
 

@@ -20,6 +20,7 @@ class Miniature:
         self.statblocks = dict["statblocks"]
         self.link = dict["link"]
         self.price = dict["price"]
+        self.species = dict["tags"]["SpeciesTag"]
     def __str__(self):
         return self.name
     def __lt__(self, other):
