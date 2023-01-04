@@ -95,22 +95,177 @@ coHeaders = ["Comperators", "Function"]
 # Create the window
 window = sg.Window("Mini Tracker", layout)
 
-
-def open_edit_window(mini):
-    editorLayout=[[sg.Listbox(values=enviromentTags,
-        default_values=([enviromentTags[enviroment] for enviroment in mini["tags"]["enviromentTags"]]),
-        select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
-        enable_events=True,
-        size=(60, 20),
-        key="--list--")]
+def open_edit_window(mini, id):
+    price = str(mini["price"])
+    if price == "-1":
+        price = ""
+    editorLayout=[
+        [[sg.Text(f'Edit/Add Model ({id})',font=("",20))],
+        [sg.Text('Name:',font="bold"),sg.Input(default_text=mini["name"], key='-NAME-', size=(30, None), enable_events=True),sg.Text('Source:',font="bold"),sg.Input(default_text=mini["source"], key='-SOURCE-', size=(30, None), enable_events=True)],
+        [sg.Text('Link:',font="bold"),sg.Input(default_text=mini["link"], key='-LINK-', size=(30, None), enable_events=True),
+        sg.Text('Price (€):',font="bold"),sg.Input(default_text=price, key='-PRICE-', size=(30, None), enable_events=True)],
+        [sg.Text('Location:',font="bold"),sg.Input(default_text=mini["storageLocation"], key='-LOCATION-', size=(30, None), enable_events=True),sg.Text('Comment:',font="bold"),sg.Input(default_text=mini["comment"], key='-COMMENT-', size=(30, None), enable_events=True)],[
+        [sg.Column([
+            [sg.Text('Painters',font="bold")],[sg.Listbox(values=painters,default_values=([painters[painter] for painter in mini["PhysicalOptions"]["Painters"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 5),
+                key="--painters--")],
+                    [sg.Input(key='-PAINT-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddPainter', size=(5, None))]
+            ]),
+            sg.Column([
+                [sg.Text('Status',font="bold")],[sg.Listbox(values=statuses,default_values=([statuses[mini["PhysicalOptions"]["Status"]]
+                    ]),
+                    select_mode=sg.LISTBOX_SELECT_MODE_SINGLE,
+                    enable_events=True,
+                    size=(15, 5),
+                    key="--status--")],
+                        [sg.Input(key='-STATUS-', size=(10, None), enable_events=True),
+                         sg.Button("Add", key='AddStatus', size=(5, None))]
+                ]),
+                sg.Column([
+                    [sg.Text('Material',font="bold")],[sg.Listbox(values=materials,default_values=([materials[painter] for painter in mini["PhysicalOptions"]["Material"]
+                        ]),
+                        select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                        enable_events=True,
+                        size=(15, 5),
+                        key="--material--")],
+                            [sg.Input(key='-MATERIAL-', size=(10, None), enable_events=True),
+                             sg.Button("Add", key='AddMaterial', size=(5, None))]
+                    ]),
+                    sg.Column([
+                        [sg.Text('Kitbash Sources',font="bold")],[sg.Multiline(default_text="\n".join(mini["PhysicalOptions"]["Kitbash Sources"]),
+                            enable_events=True,
+                            size=(15, 7),
+                            key="--kitSources--")]
+                        ]),
+                        sg.Column([
+                        [sg.Button("Change Image", key='ChangeImage')]
+                        ])
+        ]],[
+        [sg.Column([
+            [sg.Text('Enviroments',font="bold")],[sg.Listbox(values=enviromentTags,default_values=([enviromentTags[enviroment] for enviroment in mini["tags"]["enviromentTags"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--enironments--")],
+                    [sg.Input(key='-ENV-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddEnv', size=(5, None))],
+            [sg.Text('Planes',font="bold")],[sg.Listbox(values=planeTags,default_values=([planeTags[enviroment] for enviroment in mini["tags"]["planeTags"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--planes--")],
+                    [sg.Input(key='-PLNS-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddPlanes', size=(5, None))]
+            ]),sg.Column([
+            [sg.Text('Sizes',font="bold")],[sg.Listbox(values=sizeTags,default_values=([sizeTags[enviroment] for enviroment in mini["tags"]["SizeTags"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--sizes--")],
+                    [sg.Input(key='-SIZE-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddSize', size=(5, None))],
+            [sg.Text('Creature Types',font="bold")],[sg.Listbox(values=creatureTypeTags,default_values=([creatureTypeTags[enviroment] for enviroment in mini["tags"]["CreatureTypeTags"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--crtypes--")],
+                    [sg.Input(key='-CRTP-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddCreatureType', size=(5, None))]
+            ]),sg.Column([
+            [sg.Text('Classes',font="bold")],[sg.Listbox(values=creatureClassTag,default_values=([creatureClassTag[enviroment] for enviroment in mini["tags"]["CreatureClassTag"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--classes--")],
+                    [sg.Input(key='-CLASS-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddClass', size=(5, None))],
+            [sg.Text('Species',font="bold")],[sg.Listbox(values=creatureSpeciesTags,default_values=([creatureSpeciesTags[enviroment] for enviroment in mini["tags"]["SpeciesTag"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--speciess--")],
+                    [sg.Input(key='-SPCS-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddSpecies', size=(5, None))]
+            ]),sg.Column([
+            [sg.Text('Movements',font="bold")],[sg.Listbox(values=creatureMovementTag,default_values=([creatureMovementTag[enviroment] for enviroment in mini["tags"]["CreatureMovementTag"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--movements--")],
+                    [sg.Input(key='-MOVEMENT-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddMove', size=(5, None))],
+            [sg.Text('Attacks',font="bold")],[sg.Listbox(values=creatureAttackTags,default_values=([creatureAttackTags[enviroment] for enviroment in mini["tags"]["CreatureAttackTags"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 10),
+                key="--atacks--")],
+                    [sg.Input(key='-ATKS-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddAttack', size=(5, None))]
+            ]),
+            sg.Column([
+            [sg.Text('Tags',font="bold")],[sg.Listbox(values=additionalTags,default_values=([additionalTags[enviroment] for enviroment in mini["tags"]["AdditionalTag"]
+                ]),
+                select_mode=sg.LISTBOX_SELECT_MODE_MULTIPLE,
+                enable_events=True,
+                size=(15, 24),
+                key="--tags--")],
+                    [sg.Input(key='-TAG-', size=(10, None), enable_events=True),
+                     sg.Button("Add", key='AddTag', size=(5, None))]])
+        ]],[sg.Button('Save'),sg.Button('Exit')]]
 
     ]
-    helpwindow = sg.Window("Edit/Add Mini", editorLayout, modal=True)
+    helpwindow = sg.Window("Edit/Add Mini", editorLayout, modal=True, element_justification='c')
     choice = None
+
     while True:
         event, values = helpwindow.read()
-        if event == "Exit" or event == sg.WIN_CLOSED:
+        if event == sg.WIN_CLOSED:
             break
+        if event == "Exit":
+            if sg.popup_ok_cancel("Exit without saving?"):
+                break
+        if event == '-PRICE-':
+            if re.match(r'^$|^\d+(?:\.\d*)?$', values['-PRICE-']) is None:
+                if values['-PRICE-'] == ".":
+                    helpwindow['-PRICE-'].update("0.")
+                    price = values['-PRICE-']
+                else:
+                    helpwindow['-PRICE-'].update(price)
+            else:
+                price = values['-PRICE-']
+        if event == "AddPainter":
+            newPainter = values['-PAINT-']
+            if not newPainter == "":
+                if not newPainter in painters:
+                    painters.append(newPainter)
+                painterid = painters.index(newPainter)
+                mini["PhysicalOptions"]["Painters"].append(painterid)
+                indices = list(helpwindow['--painters--'].GetIndexes())
+                if painterid in indices:
+                    indices.remove(painterid)
+                else:
+                    indices.append(painterid)
+                helpwindow['--painters--'].update(values=painters,set_to_index=indices)
+        if event == "AddStatus":
+            newStatus = values['-STATUS-']
+            if not newStatus == "":
+                if not newStatus in statuses:
+                    statuses.append(newStatus)
+                statusid = statuses.index(newStatus)
+                mini["PhysicalOptions"]["Status"]=statusid
+                helpwindow['--painters--'].update(values=painters,set_to_index=[statusid])
 
     helpwindow.close()
     return mini
@@ -356,7 +511,7 @@ while True:
         if filteredValues and ids:
             obj = filteredValues[ids[0]]
             mini = dictValues[obj.id]
-            dictValues[obj.id] = open_edit_window(mini)
+            dictValues[obj.id] = open_edit_window(mini, obj.id)
             originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
             filteredValues = originalValues.copy()
             search(values["-IN-"])
