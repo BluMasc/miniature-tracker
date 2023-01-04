@@ -198,7 +198,10 @@
             "Warforged",
             "Witchknife",
             "Wraith",
-            "Zombie"
+            "Zombie",
+            "Hog",
+            "Pig",
+            "Lion"
         ],
         "AdditionalTag": [
             "Playable",
@@ -226,7 +229,8 @@
             "Yellow",
             "Bronze",
             "Gray",
-            "Green"
+            "Green",
+            "Pet"
         ]
     },
     "PhysicalOptions": {
@@ -331,8 +335,13 @@
             "comment": "",
             "tags": {
                 "enviromentTags": [
+                    3,
+                    6,
                     7,
                     8,
+                    9,
+                    11,
+                    12,
                     18
                 ],
                 "planeTags": [
@@ -343,8 +352,8 @@
                     3
                 ],
                 "CreatureTypeTags": [
-                    10,
-                    1
+                    1,
+                    10
                 ],
                 "CreatureClassTag": [],
                 "CreatureMovementTag": [
@@ -354,13 +363,16 @@
                 "CreatureAttackTags": [
                     1
                 ],
-                "SpeciesTag": [],
+                "SpeciesTag": [
+                    75,
+                    76
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
             "link": "?",
-            "price": -1
+            "price": 1.0
         },
         "2": {
             "name": "Air Elemental",
@@ -395,8 +407,7 @@
                     1
                 ],
                 "CreatureAttackTags": [
-                    1,
-                    2
+                    1
                 ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
@@ -404,7 +415,7 @@
             "storageLocation": "?",
             "statblocks": [],
             "link": "?",
-            "price": 0
+            "price": 0.0
         },
         "0": {
             "name": "Aarakocra Warrior",
@@ -547,7 +558,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    1
+                ],
                 "Kitbash Sources": []
             },
             "source": "Raging Heroes: Kristina Karlstein Armoured Division Officer (IE) ",
@@ -556,21 +569,30 @@
                 "enviromentTags": [
                     19
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
                     9
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureClassTag": [
+                    9
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0
+                ],
                 "SpeciesTag": [
                     39
                 ],
                 "AdditionalTag": [
-                    1
+                    0,
+                    4
                 ]
             },
             "storageLocation": "?",
@@ -579,8 +601,8 @@
                 "Mummy",
                 "Mummy Lord"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.ragingheroes.com/products/kristina-karlstein-armoured-division-officer-ie",
+            "price": 13.95,
             "old": {
                 "name": "Ajawo Armored Enforcer",
                 "painted": "Gerrit",
@@ -608,30 +630,50 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
-                "Kitbash Sources": []
+                "Material": [
+                    2
+                ],
+                "Kitbash Sources": [
+                    "Girros",
+                    "Kobold",
+                    "Fighter"
+                ]
             },
             "source": "3d Printed: Digital Kitbash",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    7,
+                    18
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     3
                 ],
                 "CreatureTypeTags": [
+                    9,
+                    10
+                ],
+                "CreatureClassTag": [
                     9
                 ],
-                "CreatureClassTag": [],
                 "CreatureMovementTag": [
+                    0,
+                    4,
                     8
                 ],
-                "CreatureAttackTags": [],
+                "CreatureAttackTags": [
+                    0,
+                    1
+                ],
                 "SpeciesTag": [
                     28,
                     41
                 ],
                 "AdditionalTag": [
+                    0,
                     11
                 ]
             },
@@ -674,14 +716,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Reaper Miniatures: Necromancer",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -689,21 +737,32 @@
                     9,
                     13
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
-                "AdditionalTag": [
-                    15,
+                "CreatureClassTag": [
+                    15
+                ],
+                "CreatureMovementTag": [
+                    0,
+                    1,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
                     1
+                ],
+                "SpeciesTag": [
+                    70
+                ],
+                "AdditionalTag": [
+                    1,
+                    15
                 ]
             },
             "storageLocation": "?",
             "statblocks": [
                 "Alyssia, Vampire General"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.reapermini.com/search/necromancer/latest/77283",
+            "price": 4.48,
             "old": {
                 "name": "Alyssia, Vampire General",
                 "painted": "Gerrit",
@@ -726,8 +785,10 @@
             "name": "Angler Fish",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Abyssal Predator",
@@ -736,23 +797,33 @@
                 "enviromentTags": [
                     1
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    4
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    1
+                    1,
+                    10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureMovementTag": [
+                    3
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
+                "SpeciesTag": [
+                    21
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://mtgandmore.de/Dreamblade-040-Abyssal-Predator-Anvilborn/de",
+            "price": 0.2,
             "old": {
                 "name": "Angler Fish",
                 "painted": "Prepainted",
@@ -771,8 +842,10 @@
             "name": "Angler Fish",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Abyssal Predator",
@@ -781,23 +854,33 @@
                 "enviromentTags": [
                     1
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    4
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    1
+                    1,
+                    10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureMovementTag": [
+                    3
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
+                "SpeciesTag": [
+                    21
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://mtgandmore.de/Dreamblade-040-Abyssal-Predator-Anvilborn/de",
+            "price": 0.2,
             "old": {
                 "name": "Angler Fish",
                 "painted": "Prepainted",
@@ -816,8 +899,10 @@
             "name": "Angler Fish",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Abyssal Predator",
@@ -826,23 +911,33 @@
                 "enviromentTags": [
                     1
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    4
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    1
+                    1,
+                    10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureMovementTag": [
+                    3
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
+                "SpeciesTag": [
+                    21
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://mtgandmore.de/Dreamblade-040-Abyssal-Predator-Anvilborn/de",
+            "price": 0.2,
             "old": {
                 "name": "Angler Fish",
                 "painted": "Prepainted",
@@ -864,25 +959,36 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    2
+                ],
                 "Kitbash Sources": []
             },
-            "source": "3d Printed: https://www.thingiverse.com/thing:3576661",
+            "source": "3d Printed",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1,
+                    2,
+                    9
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    0,
                     10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [
+                "CreatureMovementTag": [
+                    0,
                     2
                 ],
+                "CreatureAttackTags": [],
                 "SpeciesTag": [
                     48
                 ],
@@ -918,25 +1024,36 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    2
+                ],
                 "Kitbash Sources": []
             },
-            "source": "3d Printed: https://www.thingiverse.com/thing:3576661",
+            "source": "3d Printed",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1,
+                    2,
+                    9
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    0,
                     10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [
+                "CreatureMovementTag": [
+                    0,
                     2
                 ],
+                "CreatureAttackTags": [],
                 "SpeciesTag": [
                     48
                 ],
@@ -972,25 +1089,36 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    2
+                ],
                 "Kitbash Sources": []
             },
-            "source": "3d Printed: https://www.thingiverse.com/thing:3576661",
+            "source": "3d Printed",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1,
+                    2,
+                    9
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    0,
                     10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [
+                "CreatureMovementTag": [
+                    0,
                     2
                 ],
+                "CreatureAttackTags": [],
                 "SpeciesTag": [
                     48
                 ],
@@ -1024,7 +1152,9 @@
             "PhysicalOptions": {
                 "Painters": [],
                 "Status": 0,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Ardent Zungar",
@@ -1033,7 +1163,10 @@
                 "enviromentTags": [
                     19
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    7
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1041,16 +1174,22 @@
                     9,
                     10
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureClassTag": [
+                    7
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.nobleknight.com/P/2147441150/Ardent-Zungar",
+            "price": 0.2,
             "old": {
                 "name": "Ardent Zungar",
                 "painted": "Prepainted",
@@ -1074,14 +1213,22 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    1
+                ],
                 "Kitbash Sources": []
             },
             "source": "The Elder Scrolls: Call to Arms - Draugr Ancients",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1,
+                    8
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1089,10 +1236,18 @@
                     9,
                     13
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureClassTag": [
+                    9
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0
+                ],
+                "SpeciesTag": [
+                    13
+                ],
                 "AdditionalTag": [
                     0
                 ]
@@ -1105,8 +1260,8 @@
                 "Ghoul",
                 "Ghast"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.fantasywelt.de/The-Elder-Scrolls-Call-to-Arms-Draugr-Ancients-EN",
+            "price": 7.2,
             "old": {
                 "name": "Armored Draugr",
                 "painted": "Gerrit",
@@ -1135,7 +1290,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Games Workshop: Warhammer Underworlds: Beastgrave",
@@ -1143,9 +1300,14 @@
             "tags": {
                 "enviromentTags": [
                     7,
+                    8,
+                    10,
                     19
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    7
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1153,18 +1315,26 @@
                     1
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
-                "AdditionalTag": []
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
+                "SpeciesTag": [
+                    77
+                ],
+                "AdditionalTag": [
+                    26
+                ]
             },
             "storageLocation": "?",
             "statblocks": [
                 "Lion",
                 "Fleecemane Lion"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.fantasywelt.de/Warhammer-Underworlds-Beastgrave-DE_1",
+            "price": 5.72,
             "old": {
                 "name": "Armored Lion",
                 "painted": "Gerrit",
@@ -1190,16 +1360,22 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Games Workshop: Mordor(TM) Troll",
             "comment": "",
             "tags": {
                 "enviromentTags": [
-                    18
+                    13,
+                    18,
+                    20
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     3
                 ],
@@ -1207,8 +1383,12 @@
                     8
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0
+                ],
                 "SpeciesTag": [
                     69
                 ],
@@ -1218,8 +1398,8 @@
             "statblocks": [
                 "Troll"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.games-workshop.com/de-DE/Mordor-Troll-2018",
+            "price": 2.0,
             "old": {
                 "name": "Armored Troll",
                 "painted": "Gerrit",
@@ -1244,14 +1424,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wolsung Steampunk: Inventors - Galvanizer",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1259,17 +1445,28 @@
                     9
                 ],
                 "CreatureClassTag": [
+                    1,
                     25
                 ],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
-                "AdditionalTag": []
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
+                "SpeciesTag": [
+                    39
+                ],
+                "AdditionalTag": [
+                    0,
+                    4
+                ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.fantasywelt.de/Wolsung-Inventors-Galvanizer_1",
+            "price": 9.18,
             "old": {
                 "name": "Artificer Girl",
                 "painted": "Gerrit",
@@ -1291,14 +1488,22 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wrath of Ashardalon Board Game",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    11
+                ],
+                "planeTags": [
+                    1,
+                    2,
+                    5
+                ],
                 "SizeTags": [
                     4
                 ],
@@ -1306,21 +1511,28 @@
                     4
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    1,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1,
+                    4
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": [
+                    1,
                     5,
-                    14,
-                    6
+                    14
                 ]
             },
             "storageLocation": "?",
             "statblocks": [
                 "Adult Red Dragon"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.fantasywelt.de/Wrath-of-Ashardalon-Boardgame-D-D-EN_1",
+            "price": 1.56,
             "old": {
                 "name": "Ashardalon the Red Dragon",
                 "painted": "Gerrit",
@@ -1346,27 +1558,39 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Heroclix: Marvel Elektra",
             "comment": "",
             "tags": {
                 "enviromentTags": [],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
                     9
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureClassTag": [
+                    11,
+                    15
+                ],
+                "CreatureMovementTag": [
+                    0,
+                    4
+                ],
                 "CreatureAttackTags": [
                     0,
-                    0
+                    4
                 ],
-                "SpeciesTag": [],
+                "SpeciesTag": [
+                    39
+                ],
                 "AdditionalTag": [
                     0,
                     4
@@ -1374,8 +1598,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://mtgandmore.de/032-Elektra/de",
+            "price": 0.2,
             "old": {
                 "name": "Assassin",
                 "painted": "Gerrit",
@@ -1398,15 +1622,19 @@
             "name": "Astral Reaver",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Soul Slicer",
             "comment": "",
             "tags": {
                 "enviromentTags": [],
-                "planeTags": [],
+                "planeTags": [
+                    2
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1414,8 +1642,12 @@
                     0,
                     9
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureClassTag": [
+                    11
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
                 "CreatureAttackTags": [
                     0
                 ],
@@ -1426,8 +1658,8 @@
             "statblocks": [
                 "Astral Deva"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://mtgandmore.de/epages/835.mobile/de_DE/?ViewObjectID=6628436",
+            "price": 0.2,
             "old": {
                 "name": "Astral Reaver",
                 "painted": "Prepainted",
@@ -1449,14 +1681,19 @@
             "name": "Asylum Escapee",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Asylum Escapee",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    18,
+                    20
+                ],
                 "planeTags": [],
                 "SizeTags": [
                     2
@@ -1465,19 +1702,23 @@
                     9
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1,
+                    3
+                ],
                 "SpeciesTag": [
                     48
                 ],
-                "AdditionalTag": [
-                    1
-                ]
+                "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://mtgandmore.de/Dreamblade-026-Asylum-Escapee-Base-Set/de",
+            "price": 0.2,
             "old": {
                 "name": "Asylum Escapee",
                 "painted": "Prepainted",
@@ -1500,14 +1741,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wolsung Steampunk: Lab Golem",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1516,18 +1763,23 @@
                     9
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureMovementTag": [
+                    0
+                ],
                 "CreatureAttackTags": [],
                 "SpeciesTag": [
                     34,
-                    56
+                    56,
+                    71
                 ],
-                "AdditionalTag": []
+                "AdditionalTag": [
+                    0
+                ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.super-hobby.de/products/Inventors-Lab-Golem-walking-1.html",
+            "price": 8.16,
             "old": {
                 "name": "Automaton Buttler",
                 "painted": "Gerrit",
@@ -1548,24 +1800,37 @@
             "name": "Autophage",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Hellshrieker",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    13,
+                    20
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    0,
                     10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    4
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     62
                 ],
@@ -1575,8 +1840,8 @@
             "statblocks": [
                 "Spawn of Kyuss"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.nobleknight.com/P/2147441095/Hellshrieker",
+            "price": 0.2,
             "old": {
                 "name": "Autophage",
                 "painted": "Prepainted",
@@ -1601,14 +1866,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Reaper Miniatures: Deladrin, Female Assassin",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1616,19 +1887,31 @@
                     9,
                     13
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
-                "AdditionalTag": [
-                    15,
+                "CreatureClassTag": [
+                    15
+                ],
+                "CreatureMovementTag": [
+                    0,
+                    1,
+                    4,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
                     1
+                ],
+                "SpeciesTag": [
+                    70
+                ],
+                "AdditionalTag": [
+                    1,
+                    15
                 ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.reapermini.com/miniatures/female%20assassin/latest/77035",
+            "price": 4.48,
             "old": {
                 "name": "Avalin, Vampire General",
                 "painted": "Gerrit",
@@ -12444,14 +12727,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Hot & Dangerous: Octavia, Anno Domini 1666 girl",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -12463,15 +12752,25 @@
                     9,
                     19
                 ],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
-                "AdditionalTag": []
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
+                "SpeciesTag": [
+                    39
+                ],
+                "AdditionalTag": [
+                    1,
+                    4
+                ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://sklep.wargamer.pl/octavia-anno-domini-1666-girl-28-mm-model-z-polskimi-kartami.html",
+            "price": 7.0,
             "old": {
                 "name": "Adis, Human Gunslinger",
                 "painted": "Gerrit",

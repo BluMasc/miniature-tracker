@@ -697,12 +697,15 @@ while True:
         if filteredValues and ids:
             obj = filteredValues[ids[0]]
             mini = dictValues[obj.id]
+            id = window["--list--"].GetIndexes()[0]
             dictValues[obj.id] = open_edit_window(mini, obj.id)
             save()
             originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
             filteredValues = originalValues.copy()
             search(values["-IN-"])
-            window.Element("--list--").Update(filteredValues)
+            window.Element("--list--").Update(filteredValues,set_to_index=[id],scroll_to_index=id)
+            obj = filteredValues[id]
+            update_values(obj)
     elif event == 'Add':
         id = 0
         while str(id) in dictValues:
