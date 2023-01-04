@@ -259,7 +259,8 @@
             "Wood",
             "Aluminum",
             "Clay",
-            "Plastic"
+            "Plastic",
+            "Green Stuff"
         ]
     },
     "Sources": [
@@ -459,7 +460,7 @@
                 "berserker",
                 "bnadit"
             ],
-            "link": "https://www.retroreden.dk/en/gormiti-bunker/2681-30-pack-gormiti-neorganic-air-figures.html",
+            "link": "Discontinued",
             "price": 0.66,
             "old": {
                 "name": "Aarakocra Warrior",
@@ -526,7 +527,7 @@
                 "bnadit",
                 "knight"
             ],
-            "link": "https://www.retroreden.dk/en/gormiti-bunker/2681-30-pack-gormiti-neorganic-air-figures.html",
+            "link": "Discontinued",
             "price": 0.66,
             "old": {
                 "name": "Aarakocra Warrior",
@@ -822,7 +823,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://mtgandmore.de/Dreamblade-040-Abyssal-Predator-Anvilborn/de",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Angler Fish",
@@ -879,7 +880,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://mtgandmore.de/Dreamblade-040-Abyssal-Predator-Anvilborn/de",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Angler Fish",
@@ -936,7 +937,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://mtgandmore.de/Dreamblade-040-Abyssal-Predator-Anvilborn/de",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Angler Fish",
@@ -1188,7 +1189,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://www.nobleknight.com/P/2147441150/Ardent-Zungar",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Ardent Zungar",
@@ -1260,7 +1261,7 @@
                 "Ghoul",
                 "Ghast"
             ],
-            "link": "https://www.fantasywelt.de/The-Elder-Scrolls-Call-to-Arms-Draugr-Ancients-EN",
+            "link": "https://www.modiphius.net/products/the-elder-scrolls-call-to-arms-draugr-ancients",
             "price": 7.2,
             "old": {
                 "name": "Armored Draugr",
@@ -1465,7 +1466,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://www.fantasywelt.de/Wolsung-Inventors-Galvanizer_1",
+            "link": "https://shop.microartstudio.com/de/henchman/626-inventors-galvanizer.html",
             "price": 9.18,
             "old": {
                 "name": "Artificer Girl",
@@ -1531,7 +1532,7 @@
             "statblocks": [
                 "Adult Red Dragon"
             ],
-            "link": "https://www.fantasywelt.de/Wrath-of-Ashardalon-Boardgame-D-D-EN_1",
+            "link": "https://www.amazon.de/Wizards-Coast-214420000-Ashardalon-Brettspiel/dp/0786955708",
             "price": 1.56,
             "old": {
                 "name": "Ashardalon the Red Dragon",
@@ -1598,7 +1599,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://mtgandmore.de/032-Elektra/de",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Assassin",
@@ -1658,7 +1659,7 @@
             "statblocks": [
                 "Astral Deva"
             ],
-            "link": "https://mtgandmore.de/epages/835.mobile/de_DE/?ViewObjectID=6628436",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Astral Reaver",
@@ -1717,7 +1718,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://mtgandmore.de/Dreamblade-026-Asylum-Escapee-Base-Set/de",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Asylum Escapee",
@@ -1778,7 +1779,7 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "https://www.super-hobby.de/products/Inventors-Lab-Golem-walking-1.html",
+            "link": "https://shop.microartstudio.com/de/henchman/584-inventors-lab-golem-walking.html",
             "price": 8.16,
             "old": {
                 "name": "Automaton Buttler",
@@ -1840,7 +1841,7 @@
             "statblocks": [
                 "Spawn of Kyuss"
             ],
-            "link": "https://www.nobleknight.com/P/2147441095/Hellshrieker",
+            "link": "Discontinued",
             "price": 0.2,
             "old": {
                 "name": "Autophage",
@@ -1934,15 +1935,21 @@
                 "Painters": [
                     0
                 ],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Mage Knight: Shade",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    0
+                ],
+                "planeTags": [
+                    0
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -1950,17 +1957,25 @@
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureMovementTag": [
+                    1,
+                    6,
+                    7
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
+                "SpeciesTag": [
+                    27
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [
                 "Avatar of Death"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Avatar Of Death",
                 "painted": "Gerrit",
@@ -1984,7 +1999,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dust: Avatar Cthulhu",
@@ -2001,17 +2018,28 @@
                     0
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    1,
+                    3,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    1,
+                    3,
+                    4
+                ],
                 "SpeciesTag": [
                     33
                 ],
-                "AdditionalTag": []
+                "AdditionalTag": [
+                    8
+                ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 40.0,
             "old": {
                 "name": "Avatar of Cthulhu",
                 "painted": "Gerrit",
@@ -2034,13 +2062,18 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    1
+                ],
                 "Kitbash Sources": []
             },
             "source": "Conquest: Dweghom: Herald of Fire",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    16,
+                    18
+                ],
                 "planeTags": [
                     5
                 ],
@@ -2051,9 +2084,16 @@
                     5,
                     9
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureClassTag": [
+                    2
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
                 "SpeciesTag": [
                     17
                 ],
@@ -2061,8 +2101,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://eshop.para-bellum.com/dweghom/156-Herald-of-Fire-PBW7336.html",
+            "price": 18.0,
             "old": {
                 "name": "Azer Barbarian",
                 "painted": "Gerrit",
@@ -2086,13 +2126,18 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    1
+                ],
                 "Kitbash Sources": []
             },
             "source": "Conquest: Dweghom: Tempered Sorcerer",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    16,
+                    18
+                ],
                 "planeTags": [
                     5
                 ],
@@ -2103,9 +2148,16 @@
                     5,
                     9
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureClassTag": [
+                    16
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
                 "SpeciesTag": [
                     17
                 ],
@@ -2118,8 +2170,8 @@
                 "Azer Lord",
                 "Mage"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://eshop.para-bellum.com/dweghom/54-Tempered-Sorcerer-PBW7330.html",
+            "price": 15.4,
             "old": {
                 "name": "Azer Sorcerer",
                 "painted": "Gerrit",
@@ -2148,25 +2200,35 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    2
+                ],
                 "Kitbash Sources": []
             },
-            "source": "3d Printed: https://www.thingiverse.com/thing:153482",
+            "source": "3d Printed",
             "comment": "",
             "tags": {
                 "enviromentTags": [
                     7
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     1
                 ],
                 "CreatureTypeTags": [
+                    1,
                     10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": [
                     10
@@ -2177,7 +2239,7 @@
                 "Owlbear"
             ],
             "link": "https://www.thingiverse.com/thing:153482",
-            "price": -1,
+            "price": 0.0,
             "old": {
                 "name": "Baby Owlbear",
                 "painted": "Gerrit",
@@ -2202,25 +2264,37 @@
                     2
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Reaper Miniatures: Familiars 2",
             "comment": "",
             "tags": {
                 "enviromentTags": [
+                    13,
                     19
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    20
+                ],
                 "SizeTags": [
                     1
                 ],
                 "CreatureTypeTags": [
-                    1
+                    1,
+                    2,
+                    10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    1
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": [
                     10
@@ -2230,8 +2304,8 @@
             "statblocks": [
                 "Quetzalcoatlus"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.reapermini.com/search/familiar/latest/77196",
+            "price": 0.746,
             "old": {
                 "name": "Baby Quetzalcoatl",
                 "painted": "Anastasia",
@@ -2256,14 +2330,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    9
+                ],
                 "Kitbash Sources": []
             },
             "source": "Toy",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    19
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     1,
                     2
@@ -2272,8 +2352,12 @@
                     1
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     10
                 ],
@@ -2282,7 +2366,7 @@
             "storageLocation": "?",
             "statblocks": [],
             "link": "?",
-            "price": -1,
+            "price": 0.0,
             "old": {
                 "name": "Baby Stegosaurus",
                 "painted": "Gerrit",
@@ -2305,14 +2389,25 @@
                     2
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Oakbound: the woods: forest critters",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    12
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -2321,15 +2416,23 @@
                     6
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
-                "AdditionalTag": []
+                "AdditionalTag": [
+                    10,
+                    26
+                ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.oakbound.co.uk/thewoods/miniatures/",
+            "price": 0.5,
             "old": {
                 "name": "Badger",
                 "painted": "Anastasia",
@@ -2352,14 +2455,18 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Legend of Drizzt Board Game",
             "comment": "",
             "tags": {
                 "enviromentTags": [],
-                "planeTags": [],
+                "planeTags": [
+                    16
+                ],
                 "SizeTags": [
                     4
                 ],
@@ -2367,24 +2474,27 @@
                     7
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureMovementTag": [
+                    0,
+                    1
+                ],
                 "CreatureAttackTags": [
-                    0
+                    0,
+                    1,
+                    2
                 ],
                 "SpeciesTag": [
                     8
                 ],
-                "AdditionalTag": [
-                    6
-                ]
+                "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [
                 "Lesser Balor",
                 "Balor"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Legend-of-Drizzt-Boardgame-355940000/dp/0786958731",
+            "price": 1.282,
             "old": {
                 "name": "Balor",
                 "painted": "Gerrit",
@@ -2408,26 +2518,40 @@
             "name": "Banshee",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Alluring Succubus",
             "comment": "",
             "tags": {
                 "enviromentTags": [
-                    18
+                    13,
+                    18,
+                    20
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    10
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    9,
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    1,
+                    7
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     27
                 ],
@@ -2438,8 +2562,8 @@
                 "Banshee",
                 "Ghost"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Banshee",
                 "painted": "Prepainted",
@@ -2465,25 +2589,39 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Alternative Armies: FL24-05 Weeping Banshee",
             "comment": "",
             "tags": {
                 "enviromentTags": [
-                    18
+                    13,
+                    18,
+                    20
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    10
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    9,
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    1,
+                    7
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     27
                 ],
@@ -2494,8 +2632,8 @@
                 "Banshee",
                 "Ghost"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.alternative-armies.com/products/fl24-05-weeping-banshee",
+            "price": 0.0,
             "old": {
                 "name": "Banshee",
                 "painted": "Gerrit",
@@ -2521,17 +2659,23 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    2
+                ],
                 "Kitbash Sources": []
             },
-            "source": "3d Printed: https://www.thingiverse.com/thing:3472722",
+            "source": "3d Printed",
             "comment": "",
             "tags": {
                 "enviromentTags": [
+                    3,
                     5,
                     12
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    6
+                ],
                 "SizeTags": [
                     3
                 ],
@@ -2539,8 +2683,14 @@
                     10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2,
+                    3
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -2550,7 +2700,7 @@
                 "Barroth"
             ],
             "link": "https://www.thingiverse.com/thing:3472722",
-            "price": -1,
+            "price": 0.02,
             "old": {
                 "name": "Barroth",
                 "painted": "Gerrit",
@@ -2577,34 +2727,46 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Rackham Confrontation: Azahir the Mad of Mid-Nor Dwarves",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    18
+                ],
                 "planeTags": [
-                    5
+                    1
                 ],
                 "SizeTags": [
-                    2,
-                    3
+                    1,
+                    2
                 ],
                 "CreatureTypeTags": [
                     3,
                     5
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureClassTag": [
+                    1
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0
+                ],
+                "SpeciesTag": [
+                    51
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://cadwallon.com/confrontation/azahir-the-mad",
+            "price": 3.0,
             "old": {
                 "name": "Bat Knight",
                 "painted": "Gerrit",
@@ -2629,7 +2791,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wrath of Ashardalon Board Game",
@@ -2638,7 +2802,9 @@
                 "enviromentTags": [
                     7
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -2646,8 +2812,13 @@
                     1
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -2657,8 +2828,8 @@
                 "Black Bear",
                 "Brown Bear"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-214420000-Ashardalon-Brettspiel/dp/0786955708",
+            "price": 1.56,
             "old": {
                 "name": "Bear",
                 "painted": "Gerrit",
@@ -2684,7 +2855,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wrath of Ashardalon Board Game",
@@ -2693,7 +2866,9 @@
                 "enviromentTags": [
                     7
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -2701,8 +2876,13 @@
                     1
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -2712,8 +2892,8 @@
                 "Black Bear",
                 "Brown Bear"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-214420000-Ashardalon-Brettspiel/dp/0786955708",
+            "price": 1.56,
             "old": {
                 "name": "Bear",
                 "painted": "Gerrit",
@@ -2739,7 +2919,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wrath of Ashardalon Board Game",
@@ -2748,7 +2930,9 @@
                 "enviromentTags": [
                     7
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -2756,8 +2940,13 @@
                     1
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -2767,8 +2956,8 @@
                 "Black Bear",
                 "Brown Bear"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-214420000-Ashardalon-Brettspiel/dp/0786955708",
+            "price": 1.56,
             "old": {
                 "name": "Bear",
                 "painted": "Gerrit",
@@ -2794,7 +2983,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Toy",
@@ -2803,7 +2994,9 @@
                 "enviromentTags": [
                     7
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2,
                     3
@@ -2812,15 +3005,20 @@
                     1
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    2
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [],
             "link": "?",
-            "price": -1,
+            "price": 0.0,
             "old": {
                 "name": "Bear",
                 "painted": "Gerrit",
@@ -2843,14 +3041,24 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Nolzurs Marvelous Unpainted Minis: D&D Beholder",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    13,
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1,
+                    2,
+                    23
+                ],
                 "SizeTags": [
                     3
                 ],
@@ -2858,8 +3066,12 @@
                     0
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    7
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     0
                 ],
@@ -2869,8 +3081,8 @@
             "statblocks": [
                 "Beholder"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizkids-Beholder-Nolzurs-Marvelous-Miniatures/dp/B077YXH44J",
+            "price": 12.5,
             "old": {
                 "name": "Beholder",
                 "painted": "Gerrit",
@@ -2900,8 +3112,14 @@
             "source": "Dungeon of the mad Mage Board Game",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    13,
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     3
                 ],
@@ -2910,8 +3128,12 @@
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    7
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     0
                 ],
@@ -2921,8 +3143,8 @@
             "statblocks": [
                 "Beholder Zombie"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/-/en/Waterdeep-Dungeon-Mage-Board-Premium/dp/B07D5PBF73",
+            "price": 1.19,
             "old": {
                 "name": "Beholder Zombie",
                 "painted": "Gerrit",
@@ -2944,15 +3166,22 @@
             "name": "Bell Golem",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: War Toller",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1,
+                    19
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -2960,19 +3189,23 @@
                     3
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureMovementTag": [
+                    0
+                ],
                 "CreatureAttackTags": [
                     0
                 ],
-                "SpeciesTag": [],
+                "SpeciesTag": [
+                    71
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [
                 "Bronze Golem"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Bell Golem",
                 "painted": "Prepainted",
@@ -2996,16 +3229,24 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Wrath of Ashardalon Board Game",
             "comment": "",
             "tags": {
                 "enviromentTags": [
-                    15
+                    13,
+                    15,
+                    18,
+                    20
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    23
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3013,8 +3254,12 @@
                     0
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    7
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     0
                 ],
@@ -3024,8 +3269,8 @@
             "statblocks": [
                 "Gauth"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-214420000-Ashardalon-Brettspiel/dp/0786955708",
+            "price": 1.56,
             "old": {
                 "name": "Bellax, Gauth",
                 "painted": "Gerrit",
@@ -3050,34 +3295,51 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Reaper Miniatures: Hound of Tindalos",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    13,
+                    15,
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    2,
+                    23
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    1
+                    0,
+                    1,
+                    10
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     11
                 ],
                 "AdditionalTag": [
-                    18,
-                    1
+                    1,
+                    2,
+                    18
                 ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
+            "link": "https://www.reapermini.com/miniatures/chronoscope/latest/50289",
             "price": -1,
             "old": {
                 "name": "Bello, Hound of Tindalos",
@@ -3102,7 +3364,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dungeon of the mad Mage Board Game",
@@ -3111,18 +3375,28 @@
                 "enviromentTags": [
                     2
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    7
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    6
+                    6,
+                    9
                 ],
                 "CreatureClassTag": [
                     27
                 ],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
                 "SpeciesTag": [
                     37
                 ],
@@ -3132,8 +3406,8 @@
             "statblocks": [
                 "Bheur Hag"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/-/en/Waterdeep-Dungeon-Mage-Board-Premium/dp/B07D5PBF73",
+            "price": 1.19,
             "old": {
                 "name": "Bheur Hag",
                 "painted": "Gerrit",
@@ -3159,7 +3433,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dungeon of the mad Mage Board Game",
@@ -3168,18 +3444,28 @@
                 "enviromentTags": [
                     2
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    7
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    6
+                    6,
+                    9
                 ],
                 "CreatureClassTag": [
                     27
                 ],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
                 "SpeciesTag": [
                     37
                 ],
@@ -3189,8 +3475,8 @@
             "statblocks": [
                 "Bheur Hag"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/-/en/Waterdeep-Dungeon-Mage-Board-Premium/dp/B07D5PBF73",
+            "price": 1.19,
             "old": {
                 "name": "Bheur Hag",
                 "painted": "Gerrit",
@@ -3216,7 +3502,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dungeon of the mad Mage Board Game",
@@ -3225,18 +3513,28 @@
                 "enviromentTags": [
                     2
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    7
+                ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
-                    6
+                    6,
+                    9
                 ],
                 "CreatureClassTag": [
                     27
                 ],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
                 "SpeciesTag": [
                     37
                 ],
@@ -3246,8 +3544,8 @@
             "statblocks": [
                 "Bheur Hag"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/-/en/Waterdeep-Dungeon-Mage-Board-Premium/dp/B07D5PBF73",
+            "price": 1.19,
             "old": {
                 "name": "Bheur Hag",
                 "painted": "Gerrit",
@@ -3273,14 +3571,20 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    1
+                ],
                 "Kitbash Sources": []
             },
             "source": "Conquest: Spires: Biomancer",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    19
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     2,
                     3
@@ -3289,21 +3593,27 @@
                     9,
                     12
                 ],
-                "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureClassTag": [
+                    7
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    2
+                ],
                 "SpeciesTag": [
                     47
                 ],
                 "AdditionalTag": [
-                    6,
-                    1
+                    8
                 ]
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://eshop.para-bellum.com/the-spires/24-Biomancer-PBW7111.html",
+            "price": 25.0,
             "old": {
                 "name": "Biomancer",
                 "painted": "Gerrit",
@@ -3329,14 +3639,28 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
-                "Kitbash Sources": []
+                "Material": [
+                    1,
+                    8
+                ],
+                "Kitbash Sources": [
+                    "Mageknight",
+                    "Head",
+                    "?",
+                    "Body"
+                ]
             },
-            "source": "?",
+            "source": "Kitbashed",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    7
+                ],
+                "planeTags": [
+                    1,
+                    7,
+                    20
+                ],
                 "SizeTags": [
                     1
                 ],
@@ -3346,17 +3670,24 @@
                     9
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    1
+                ],
+                "CreatureAttackTags": [
+                    2
+                ],
                 "SpeciesTag": [
                     19
                 ],
-                "AdditionalTag": []
+                "AdditionalTag": [
+                    10
+                ]
             },
             "storageLocation": "?",
             "statblocks": [],
             "link": "?",
-            "price": -1,
+            "price": 0.1,
             "old": {
                 "name": "Bird Fairy",
                 "painted": "Gerrit",
@@ -3377,15 +3708,22 @@
             "name": "Blade Golem",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
-                "Material": [],
+                "Status": 0,
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade: Swordstrider",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    1,
+                    19
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3393,17 +3731,24 @@
                     3
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
-                "SpeciesTag": [],
+                "CreatureMovementTag": [
+                    0,
+                    4
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
+                "SpeciesTag": [
+                    71
+                ],
                 "AdditionalTag": []
             },
             "storageLocation": "?",
             "statblocks": [
                 "Armory Golem"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Blade Golem",
                 "painted": "Prepainted",
@@ -3426,25 +3771,37 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Castle Ravenloft Board Game",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    13,
+                    18,
+                    20
+                ],
                 "planeTags": [
+                    1,
                     5
                 ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    5,
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    2
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -3452,8 +3809,8 @@
             "statblocks": [
                 "Skeleton"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-207790000-Ravenloft-Brettspiel/dp/0786955570",
+            "price": 1.315,
             "old": {
                 "name": "Blazing Skeleton",
                 "painted": "Gerrit",
@@ -3477,25 +3834,37 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Castle Ravenloft Board Game",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    13,
+                    18,
+                    20
+                ],
                 "planeTags": [
+                    1,
                     5
                 ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    5,
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    2
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -3503,8 +3872,8 @@
             "statblocks": [
                 "Skeleton"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-207790000-Ravenloft-Brettspiel/dp/0786955570",
+            "price": 1.315,
             "old": {
                 "name": "Blazing Skeleton",
                 "painted": "Gerrit",
@@ -3528,25 +3897,37 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Castle Ravenloft Board Game",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
+                "enviromentTags": [
+                    13,
+                    18,
+                    20
+                ],
                 "planeTags": [
+                    1,
                     5
                 ],
                 "SizeTags": [
                     2
                 ],
                 "CreatureTypeTags": [
+                    5,
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    2
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -3554,8 +3935,8 @@
             "statblocks": [
                 "Skeleton"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.amazon.de/Wizards-Coast-207790000-Ravenloft-Brettspiel/dp/0786955570",
+            "price": 1.315,
             "old": {
                 "name": "Blazing Skeleton",
                 "painted": "Gerrit",
@@ -3579,7 +3960,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    2
+                ],
                 "Kitbash Sources": []
             },
             "source": "3d Printed",
@@ -3596,8 +3979,12 @@
                     5
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -3606,7 +3993,7 @@
                 "Fire Snake"
             ],
             "link": "?",
-            "price": -1,
+            "price": 0.02,
             "old": {
                 "name": "Blazing Snake",
                 "painted": "Gerrit",
@@ -3630,7 +4017,9 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Mage Knight:  Wood Golem",
@@ -3639,7 +4028,10 @@
                 "enviromentTags": [
                     7
                 ],
-                "planeTags": [],
+                "planeTags": [
+                    1,
+                    7
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3648,8 +4040,12 @@
                     13
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [],
                 "AdditionalTag": []
             },
@@ -3659,8 +4055,8 @@
                 "Wood Blight",
                 "Bramble Blight"
             ],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Blight",
                 "painted": "Gerrit",
@@ -3685,14 +4081,20 @@
             "PhysicalOptions": {
                 "Painters": [],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    9
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3701,8 +4103,14 @@
                     9
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    3
+                ],
                 "SpeciesTag": [
                     48
                 ],
@@ -3710,8 +4118,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Blind Watcher",
                 "painted": "Prepainted",
@@ -3732,14 +4140,20 @@
             "PhysicalOptions": {
                 "Painters": [],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    8
+                ],
                 "Kitbash Sources": []
             },
             "source": "Dreamblade",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    18
+                ],
+                "planeTags": [
+                    9
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3748,8 +4162,14 @@
                     9
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureMovementTag": [
+                    0,
+                    6
+                ],
+                "CreatureAttackTags": [
+                    0,
+                    3
+                ],
                 "SpeciesTag": [
                     48
                 ],
@@ -3757,8 +4177,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.2,
             "old": {
                 "name": "Blind Watcher",
                 "painted": "Prepainted",
@@ -3781,14 +4201,22 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    1
+                ],
                 "Kitbash Sources": []
             },
-            "source": "Kitbash: 3d Printed",
+            "source": "3d Printed",
             "comment": "",
             "tags": {
-                "enviromentTags": [],
-                "planeTags": [],
+                "enviromentTags": [
+                    13,
+                    18,
+                    20
+                ],
+                "planeTags": [
+                    1
+                ],
                 "SizeTags": [
                     3
                 ],
@@ -3797,7 +4225,9 @@
                 ],
                 "CreatureClassTag": [],
                 "CreatureMovementTag": [],
-                "CreatureAttackTags": [],
+                "CreatureAttackTags": [
+                    1
+                ],
                 "SpeciesTag": [
                     0,
                     70
@@ -3806,8 +4236,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "https://www.thingiverse.com/thing:4560202",
+            "price": 0.2,
             "old": {
                 "name": "Blood Pool",
                 "painted": "Gerrit",
@@ -3832,14 +4262,18 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Games Workshop: Warhammer Fantasy Battle Chaos Daemons Bloodletter",
             "comment": "",
             "tags": {
                 "enviromentTags": [],
-                "planeTags": [],
+                "planeTags": [
+                    16
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3847,7 +4281,9 @@
                     7
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureMovementTag": [
+                    0
+                ],
                 "CreatureAttackTags": [
                     0
                 ],
@@ -3858,8 +4294,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.5,
             "old": {
                 "name": "Bloodletter",
                 "painted": "Gerrit",
@@ -3882,14 +4318,18 @@
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    0
+                ],
                 "Kitbash Sources": []
             },
             "source": "Games Workshop: Warhammer Fantasy Battle Chaos Daemons Bloodletter",
             "comment": "",
             "tags": {
                 "enviromentTags": [],
-                "planeTags": [],
+                "planeTags": [
+                    16
+                ],
                 "SizeTags": [
                     2
                 ],
@@ -3897,7 +4337,9 @@
                     7
                 ],
                 "CreatureClassTag": [],
-                "CreatureMovementTag": [],
+                "CreatureMovementTag": [
+                    0
+                ],
                 "CreatureAttackTags": [
                     0
                 ],
@@ -3908,8 +4350,8 @@
             },
             "storageLocation": "?",
             "statblocks": [],
-            "link": "?",
-            "price": -1,
+            "link": "Discontinued",
+            "price": 0.5,
             "old": {
                 "name": "Bloodletter",
                 "painted": "Gerrit",
@@ -30906,13 +31348,15 @@
             }
         },
         "603": {
-            "name": "beckoning cat statue",
+            "name": "Beckoning Cat Statue",
             "PhysicalOptions": {
                 "Painters": [
                     0
                 ],
                 "Status": 1,
-                "Material": [],
+                "Material": [
+                    3
+                ],
                 "Kitbash Sources": []
             },
             "source": "Toy",
