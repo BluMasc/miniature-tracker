@@ -38,6 +38,7 @@ additionalTags = data["possibleTags"]["AdditionalTag"]
 painters = data["PhysicalOptions"]["Painters"]
 statuses = data["PhysicalOptions"]["Status"]
 materials = data["PhysicalOptions"]["Material"]
+scanSources = data["Sources"]
 
 chooseColumn = [  [sg.Text('Models')],
             [sg.Input(key='-IN-', enable_events=True), sg.Button('Search', bind_return_key=True), sg.Button('Help')],
@@ -95,10 +96,15 @@ coHeaders = ["Comperators", "Function"]
 # Create the window
 window = sg.Window("Mini Tracker", layout)
 
-def open_edit_window(mini, id):
+def open_edit_window(initialMini, id):
+    mini = initialMini.copy()
     price = str(mini["price"])
     if price == "-1":
         price = ""
+    link = f'{cfg["Images Location"]}/{id}.png'
+    linkExists = "\u274C"
+    if os.path.exists(link):
+        linkExists = "\u2714"
     editorLayout=[
         [[sg.Text(f'Edit/Add Model ({id})',font=("",20))],
         [sg.Text('Name:',font="bold"),sg.Input(default_text=mini["name"], key='-NAME-', size=(30, None), enable_events=True),sg.Text('Source:',font="bold"),sg.Input(default_text=mini["source"], key='-SOURCE-', size=(30, None), enable_events=True)],
@@ -142,8 +148,8 @@ def open_edit_window(mini, id):
                             key="--kitSources--")]
                         ]),
                         sg.Column([
-                        [sg.Button("Change Image", key='ChangeImage')]
-                        ])
+                        [sg.Text(link,font="bold",key="--imagepos--"),sg.Text(linkExists,key="--imageexists--")],[sg.FileBrowse("Change Image", key='ChangeImage',enable_events=True,file_types=(("Image Files", "*.png"),("Image Files", "*.jpg"),("Image Files", "*.bmp"),("Image Files", "*.jpeg"),("Image Files", "*.gif"),("Image Files", "*.ico"),("Image Files", "*.webp")))]
+                        ], element_justification='c')
         ]],[
         [sg.Column([
             [sg.Text('Enviroments',font="bold")],[sg.Listbox(values=enviromentTags,default_values=([enviromentTags[enviroment] for enviroment in mini["tags"]["enviromentTags"]
@@ -232,9 +238,11 @@ def open_edit_window(mini, id):
     while True:
         event, values = helpwindow.read()
         if event == sg.WIN_CLOSED:
+            return initialMini
             break
         if event == "Exit":
             if sg.popup_ok_cancel("Exit without saving?"):
+                mini = initialMini.copy()
                 break
         if event == '-PRICE-':
             if re.match(r'^$|^\d+(?:\.\d*)?$', values['-PRICE-']) is None:
@@ -247,25 +255,191 @@ def open_edit_window(mini, id):
                 price = values['-PRICE-']
         if event == "AddPainter":
             newPainter = values['-PAINT-']
-            if not newPainter == "":
+            if not newPainter.strip() == "":
                 if not newPainter in painters:
                     painters.append(newPainter)
                 painterid = painters.index(newPainter)
-                mini["PhysicalOptions"]["Painters"].append(painterid)
                 indices = list(helpwindow['--painters--'].GetIndexes())
                 if painterid in indices:
                     indices.remove(painterid)
                 else:
                     indices.append(painterid)
-                helpwindow['--painters--'].update(values=painters,set_to_index=indices)
+                mini["PhysicalOptions"]["Painters"]=indices
+                helpwindow['--painters--'].update(values=painters,set_to_index=indices,scroll_to_index=painterid)
         if event == "AddStatus":
             newStatus = values['-STATUS-']
-            if not newStatus == "":
+            if not newStatus.strip() == "":
                 if not newStatus in statuses:
                     statuses.append(newStatus)
                 statusid = statuses.index(newStatus)
                 mini["PhysicalOptions"]["Status"]=statusid
-                helpwindow['--painters--'].update(values=painters,set_to_index=[statusid])
+                helpwindow['--status--'].update(values=statuses,set_to_index=[statusid],scroll_to_index=statusid)
+        if event == "AddMaterial":
+            newStatus = values['-MATERIAL-']
+            if not newStatus.strip() == "":
+                if not newStatus in materials:
+                    materials.append(newStatus)
+                statusid = materials.index(newStatus)
+                indices = list(helpwindow['--material--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["PhysicalOptions"]["Material"]=indices
+                helpwindow['--material--'].update(values=materials,set_to_index=indices,scroll_to_index=statusid)
+        if event == "ChangeImage":
+            link = values["ChangeImage"]
+            linkExists = "\u274C"
+            if os.path.exists(link):
+                linkExists = "\u2714"
+            helpwindow['--imagepos--'].update(link)
+            helpwindow['--imageexists--'].update(linkExists)
+        if event == "AddEnv":
+            newStatus = values['-ENV-']
+            if not newStatus.strip() == "":
+                if not newStatus in enviromentTags:
+                    enviromentTags.append(newStatus)
+                statusid = enviromentTags.index(newStatus)
+                indices = list(helpwindow['--enironments--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["enviromentTags"]=indices
+                helpwindow['--enironments--'].update(values=enviromentTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddPlanes":
+            newStatus = values['-PLNS-']
+            if not newStatus.strip() == "":
+                if not newStatus in planeTags:
+                    planeTags.append(newStatus)
+                statusid = planeTags.index(newStatus)
+                indices = list(helpwindow['--planes--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["planeTags"]=indices
+                helpwindow['--planes--'].update(values=planeTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddSize":
+            newStatus = values['-SIZE-']
+            if not newStatus.strip() == "":
+                if not newStatus in sizeTags:
+                    sizeTags.append(newStatus)
+                statusid = sizeTags.index(newStatus)
+                indices = list(helpwindow['--sizes--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["SizeTags"]=indices
+                helpwindow['--sizes--'].update(values=sizeTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddCreatureType":
+            newStatus = values['-CRTP-']
+            if not newStatus.strip() == "":
+                if not newStatus in creatureTypeTags:
+                    creatureTypeTags.append(newStatus)
+                statusid = creatureTypeTags.index(newStatus)
+                indices = list(helpwindow['--crtypes--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["CreatureTypeTags"]=indices
+                helpwindow['--crtypes--'].update(values=creatureTypeTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddClass":
+            newStatus = values['-CLASS-']
+            if not newStatus.strip() == "":
+                if not newStatus in creatureClassTag:
+                    creatureClassTag.append(newStatus)
+                statusid = creatureTypeTags.index(newStatus)
+                indices = list(helpwindow['--classes--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["CreatureClassTag"]=indices
+                helpwindow['--classes--'].update(values=creatureClassTag,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddSpecies":
+            newStatus = values['-SPCS-']
+            if not newStatus.strip() == "":
+                if not newStatus in creatureSpeciesTags:
+                    creatureSpeciesTags.append(newStatus)
+                statusid = creatureSpeciesTags.index(newStatus)
+                indices = list(helpwindow['--speciess--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["SpeciesTag"]=indices
+                helpwindow['--speciess--'].update(values=creatureSpeciesTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddMove":
+            newStatus = values['-MOVEMENT-']
+            if not newStatus.strip() == "":
+                if not newStatus in creatureMovementTag:
+                    creatureMovementTag.append(newStatus)
+                statusid = creatureMovementTag.index(newStatus)
+                indices = list(helpwindow['--movements--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["CreatureMovementTag"]=indices
+                helpwindow['--movements--'].update(values=creatureMovementTag,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddAttack":
+            newStatus = values['-ATKS-']
+            if not newStatus.strip() == "":
+                if not newStatus in creatureAttackTags:
+                    creatureAttackTags.append(newStatus)
+                statusid = creatureAttackTags.index(newStatus)
+                indices = list(helpwindow['--atacks--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["CreatureAttackTags"]=indices
+                helpwindow['--atacks--'].update(values=creatureAttackTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "AddTag":
+            newStatus = values['-TAG-']
+            if not newStatus.strip() == "":
+                if not newStatus in additionalTags:
+                    additionalTags.append(newStatus)
+                statusid = additionalTags.index(newStatus)
+                indices = list(helpwindow['--tags--'].GetIndexes())
+                if statusid in indices:
+                    indices.remove(statusid)
+                else:
+                    indices.append(statusid)
+                mini["tags"]["AdditionalTag"]=indices
+                helpwindow['--tags--'].update(values=additionalTags,set_to_index=indices,scroll_to_index=statusid)
+        if event == "Save":
+            if link != f'{cfg["Images Location"]}/{id}.png':
+                if os.path.exists(link):
+                    im = Image.open(link)
+                    im.thumbnail((800,600))
+                    im.save(f'{cfg["Images Location"]}/{id}.png')
+            mini["name"]= values['-NAME-']
+            mini["source"]= values['-SOURCE-']
+            mini["comment"]= values['-COMMENT-']
+            mini["link"]= values['-LINK-']
+            mini["storageLocation"]= values["-LOCATION-"]
+            try:
+                mini["price"]=float(values["-PRICE-"])
+            except:
+                mini["price"]=-1
+            mini["PhysicalOptions"]["Painters"] = list(helpwindow['--painters--'].GetIndexes())
+            mini["PhysicalOptions"]["Status"]=list(helpwindow['--status--'].GetIndexes())[0]
+            mini["PhysicalOptions"]["Material"] = list(helpwindow['--material--'].GetIndexes())
+            mini["PhysicalOptions"]["Kitbash Sources"] = values['--kitSources--'].split()
+            mini["tags"]["enviromentTags"] = list(helpwindow['--enironments--'].GetIndexes())
+            mini["tags"]["planeTags"] = list(helpwindow['--planes--'].GetIndexes())
+            mini["tags"]["SizeTags"] = list(helpwindow['--sizes--'].GetIndexes())
+            mini["tags"]["CreatureTypeTags"] = list(helpwindow['--crtypes--'].GetIndexes())
+            mini["tags"]["CreatureClassTag"] = list(helpwindow['--classes--'].GetIndexes())
+            mini["tags"]["SpeciesTag"] = list(helpwindow['--speciess--'].GetIndexes())
+            mini["tags"]["CreatureMovementTag"] = list(helpwindow['--movements--'].GetIndexes())
+            mini["tags"]["CreatureAttackTags"] = list(helpwindow['--atacks--'].GetIndexes())
+            mini["tags"]["AdditionalTag"] = list(helpwindow['--tags--'].GetIndexes())
+            break
 
     helpwindow.close()
     return mini
@@ -423,7 +597,13 @@ def search(termString):
     global filteredValues
     filteredValues = preFilteredValues.copy()
     window.Element("--list--").Update(filteredValues)
-
+def save():
+    out = {"possibleTags": { "enviromentTags": enviromentTags,"planeTags": planeTags,"SizeTags": sizeTags,"CreatureTypeTags": creatureTypeTags,"CreatureClassTag": creatureClassTag,"CreatureMovementTag": creatureMovementTag,"CreatureAttackTags": creatureAttackTags, "SpeciesTag": creatureSpeciesTags,"AdditionalTag": additionalTags},
+        "PhysicalOptions": {"Painters": painters, "Status": statuses,"Material": materials},
+        "Sources": scanSources,
+        "Minis": dictValues}
+    with open(cfg["File Location"], "w") as outfile:
+        json.dump(out, outfile, indent=4)
 def update_values(miniature):
     window.Element('-text-').Update(miniature)
     path = cfg["Images Location"]+"/"+miniature.id+".png"
@@ -434,7 +614,13 @@ def update_values(miniature):
     image.thumbnail((400,300))
     tk_img = ImageTk.PhotoImage(image)
     window.Element('-IMAGE-').Update(data=tk_img)
-    window.Element('-source-').Update(miniature.source)
+    kitbash = ""
+    if miniature.kitSources:
+        kitbash = " ["
+        for source in miniature.kitSources:
+            kitbash += source+", "
+        kitbash = kitbash[:-2]+"]"
+    window.Element('-source-').Update(miniature.source+kitbash)
     window.Element('-link-').Update(miniature.link)
     if miniature.price == -1:
         window.Element('-price-').Update("?")
@@ -468,7 +654,7 @@ def update_values(miniature):
     window.Element('-type-').Update(tp[:-2])
     sc = ""
     for species in miniature.species:
-        sc = tp+creatureSpeciesTags[species]+", "
+        sc = sc+creatureSpeciesTags[species]+", "
     window.Element('-species-').Update(sc[:-2])
     cls=""
     for clas in miniature.classes:
@@ -512,9 +698,24 @@ while True:
             obj = filteredValues[ids[0]]
             mini = dictValues[obj.id]
             dictValues[obj.id] = open_edit_window(mini, obj.id)
+            save()
             originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
             filteredValues = originalValues.copy()
             search(values["-IN-"])
             window.Element("--list--").Update(filteredValues)
+    elif event == 'Add':
+        id = 0
+        while str(id) in dictValues:
+            id+=1
+        id = str(id)
+        mini = {"name": "","PhysicalOptions": {"Painters": [],"Status": 0,"Material": [],"Kitbash Sources": []},"source": "","comment": "","tags": {"enviromentTags": [],"planeTags": [],"SizeTags": [], "CreatureTypeTags": [], "CreatureClassTag": [],"CreatureMovementTag": [],"CreatureAttackTags": [],"SpeciesTag": [],"AdditionalTag": []},"storageLocation": "?","statblocks": [],"link": "","price": ""}
+        out = open_edit_window(mini, id)
+        if out["name"] != "":
+            dictValues[id] = out
+        save()
+        originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
+        filteredValues = originalValues.copy()
+        search(values["-IN-"])
+        window.Element("--list--").Update(filteredValues)
     window.refresh()
 window.close()

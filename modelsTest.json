@@ -254,7 +254,8 @@
             "Stone",
             "Wood",
             "Aluminum",
-            "Clay"
+            "Clay",
+            "Plastic"
         ]
     },
     "Sources": [
@@ -1022,7 +1023,7 @@
             "name": "Ardent Zungar",
             "PhysicalOptions": {
                 "Painters": [],
-                "Status": 1,
+                "Status": 0,
                 "Material": [],
                 "Kitbash Sources": []
             },
@@ -1037,7 +1038,8 @@
                     2
                 ],
                 "CreatureTypeTags": [
-                    9
+                    9,
+                    10
                 ],
                 "CreatureClassTag": [],
                 "CreatureMovementTag": [],
@@ -30652,6 +30654,46 @@
                 ],
                 "statblocks": []
             }
+        },
+        "604": {
+            "name": "Malqur, der Smaragdgr\u00fcne",
+            "PhysicalOptions": {
+                "Painters": [],
+                "Status": 4,
+                "Material": [
+                    8
+                ],
+                "Kitbash Sources": []
+            },
+            "source": "Warhammer: Age of Sigma : Verminlord Corruptor",
+            "comment": "",
+            "tags": {
+                "enviromentTags": [],
+                "planeTags": [],
+                "SizeTags": [
+                    5
+                ],
+                "CreatureTypeTags": [
+                    2
+                ],
+                "CreatureClassTag": [
+                    7
+                ],
+                "CreatureMovementTag": [
+                    0
+                ],
+                "CreatureAttackTags": [],
+                "SpeciesTag": [
+                    33
+                ],
+                "AdditionalTag": [
+                    8
+                ]
+            },
+            "storageLocation": "?",
+            "statblocks": [],
+            "link": "https://www.games-workshop.com/de-DE/Skaven-Pestilens-Verminlord-Corruptor",
+            "price": 87.5
         }
     }
 }
