@@ -8,6 +8,7 @@ from MiniatureClass import Miniature
 import re
 from PIL import Image,ImageTk
 import webbrowser
+import copy
 
 linkregex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
 
@@ -24,7 +25,7 @@ with open(cfg["File Location"], 'r') as f:
 
 dictValues = data["Minis"]
 originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
-filteredValues = originalValues.copy()
+filteredValues = copy.deepcopy(originalValues)
 
 enviromentTags = data["possibleTags"]["enviromentTags"]
 planeTags = data["possibleTags"]["planeTags"]
@@ -51,7 +52,7 @@ chooseColumn = [  [sg.Text('Models')],
 
             ]
 editAddon = [
-            [sg.Button('Edit') ,sg.Button('Add'),sg.Button('Delete')]
+            [sg.Button('Edit') ,sg.Button('Add'),sg.Button('Copy'),sg.Button('Delete')]
             ]
 
 if cfg["Edit Mode"]:
@@ -97,7 +98,7 @@ coHeaders = ["Comperators", "Function"]
 window = sg.Window("Mini Tracker", layout)
 
 def open_edit_window(initialMini, id):
-    mini = initialMini.copy()
+    mini = copy.deepcopy(initialMini)
     price = str(mini["price"])
     if price == "-1":
         price = ""
@@ -241,8 +242,8 @@ def open_edit_window(initialMini, id):
             return initialMini
             break
         if event == "Exit":
-            if sg.popup_ok_cancel("Exit without saving?"):
-                mini = initialMini.copy()
+            if sg.popup_ok_cancel("Exit without saving?") != "Cancel":
+                mini = copy.deepcopy(initialMini)
                 break
         if event == '-PRICE-':
             if re.match(r'^$|^\d+(?:\.\d*)?$', values['-PRICE-']) is None:
@@ -536,7 +537,7 @@ def function_ni(x,y):
     return not(x.lower() in str(y).lower())
 
 def search(termString):
-    preFilteredValues = originalValues.copy()
+    preFilteredValues = copy.deepcopy(originalValues)
     #print(filteredValues)
     terms = termString.split(";")
     for term in terms:
@@ -595,7 +596,7 @@ def search(termString):
         elif term:
             preFilteredValues = list(filter(lambda mini: function_all(term,mini), preFilteredValues))
     global filteredValues
-    filteredValues = preFilteredValues.copy()
+    filteredValues = copy.deepcopy(preFilteredValues)
     window.Element("--list--").Update(filteredValues)
 def save():
     out = {"possibleTags": { "enviromentTags": enviromentTags,"planeTags": planeTags,"SizeTags": sizeTags,"CreatureTypeTags": creatureTypeTags,"CreatureClassTag": creatureClassTag,"CreatureMovementTag": creatureMovementTag,"CreatureAttackTags": creatureAttackTags, "SpeciesTag": creatureSpeciesTags,"AdditionalTag": additionalTags},
@@ -604,6 +605,29 @@ def save():
         "Minis": dictValues}
     with open(cfg["File Location"], "w") as outfile:
         json.dump(out, outfile, indent=4)
+
+def clear_values():
+    window.Element('-text-').Update("Model")
+    image = Image.new("RGBA", (400, 300), (255, 0, 0, 0))
+    tk_img = ImageTk.PhotoImage(image)
+    window.Element('-IMAGE-').Update(data=tk_img)
+    window.Element('-source-').Update("-")
+    window.Element('-link-').Update("-")
+    window.Element('-price-').Update("-")
+    window.Element('-painted-').Update("-")
+    window.Element('-status-').Update("-")
+    window.Element('-material-').Update("-")
+    window.Element('-location-').Update("-")
+    window.Element('-enviroment-').Update("-")
+    window.Element('-plane-').Update("-")
+    window.Element('-size-').Update("-")
+    window.Element('-type-').Update("-")
+    window.Element('-species-').Update("-")
+    window.Element('-class-').Update("-")
+    window.Element('-mov-').Update("-")
+    window.Element('-atk-').Update("-")
+    window.Element('-tag-').Update("-")
+
 def update_values(miniature):
     window.Element('-text-').Update(miniature)
     path = cfg["Images Location"]+"/"+miniature.id+".png"
@@ -697,11 +721,12 @@ while True:
         if filteredValues and ids:
             obj = filteredValues[ids[0]]
             mini = dictValues[obj.id]
+            print(obj.id)
             id = window["--list--"].GetIndexes()[0]
             dictValues[obj.id] = open_edit_window(mini, obj.id)
             save()
             originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
-            filteredValues = originalValues.copy()
+            filteredValues = copy.deepcopy(originalValues)
             search(values["-IN-"])
             window.Element("--list--").Update(filteredValues,set_to_index=[id],scroll_to_index=id)
             obj = filteredValues[id]
@@ -717,8 +742,38 @@ while True:
             dictValues[id] = out
         save()
         originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
-        filteredValues = originalValues.copy()
+        filteredValues = copy.deepcopy(originalValues)
         search(values["-IN-"])
         window.Element("--list--").Update(filteredValues)
+    elif event == 'Copy':
+        id = 0
+        while str(id) in dictValues:
+            id+=1
+        id = str(id)
+        ids = window.Element('--list--').GetIndexes()
+        if filteredValues and ids:
+            obj = filteredValues[ids[0]]
+            oid = window["--list--"].GetIndexes()[0]
+            mini = copy.deepcopy(dictValues[obj.id])
+            dictValues[id] = open_edit_window(mini, id)
+            save()
+            originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
+            filteredValues = copy.deepcopy(originalValues)
+            search(values["-IN-"])
+            window.Element("--list--").Update(filteredValues)
+    elif event == 'Delete':
+        ids = window.Element('--list--').GetIndexes()
+        if filteredValues and ids:
+            obj = filteredValues[ids[0]]
+            mini = dictValues[obj.id]
+            if sg.popup_ok_cancel(f"Delte this Entry for {obj.name}?") != "Cancel":
+                dictValues.pop(obj.id, None)
+                save()
+                originalValues = sorted([Miniature(n,m)  for m,n in data["Minis"].items()])
+                filteredValues = copy.deepcopy(originalValues)
+                search(values["-IN-"])
+                window.Element("--list--").Update(filteredValues)
+                clear_values()
+
     window.refresh()
 window.close()
