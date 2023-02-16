@@ -55,8 +55,14 @@ editAddon = [
             [sg.Button('Edit') ,sg.Button('Add'),sg.Button('Copy'),sg.Button('Delete')]
             ]
 
+statsAddon = [
+            [sg.FileSaveAs('Stats',file_types=(('"Text Files"', '*.txt'),), enable_events=True) ],[sg.FileSaveAs('Filtered Stats',file_types=(("Text Files", '*.txt'),), enable_events=True)]
+            ]
+
 if cfg["Edit Mode"]:
-    chooseColumn = chooseColumn+editAddon
+    chooseColumn = chooseColumn+editAddon+statsAddon
+else:
+    chooseColumn = chooseColumn+statsAddon
 
 infoColumn = [
     [sg.Text('Model', key='-text-',font=("",20),size=(30, 1))],
@@ -96,6 +102,35 @@ coHeaders = ["Comperators", "Function"]
 
 # Create the window
 window = sg.Window("Mini Tracker", layout)
+
+def export_stats(list, name):
+    divider = "-------------------------------------------------------------------------------------------------------"
+    out = f"{name}\nCount:{len(list)}\n"
+    price = 0
+    for mini in list:
+        if mini.price >0:
+            price += mini.price
+    price = "{:.2f}€".format(price)
+    out += f"Full Price: {price}\n{divider}\nPainters:\n"
+    for id, painter in enumerate(painters):
+        number = 0
+        for mini in list:
+            if id in mini.painters:
+                number += 1
+        if number > 0:
+            out += f"{painter}: {number}\n"
+    out += f"{divider}\nSources:\n"
+    for source in scanSources:
+        number = 0
+        for mini in list:
+            if source.lower() in mini.source.lower():
+                number += 1
+            for src in mini.kitSources:
+                if source.lower() in src.lower():
+                    number += 1
+        if number > 0:
+            out += f"{source}: {number}\n"
+    return out
 
 def open_edit_window(initialMini, id):
     mini = copy.deepcopy(initialMini)
@@ -430,7 +465,9 @@ def open_edit_window(initialMini, id):
             mini["PhysicalOptions"]["Painters"] = list(helpwindow['--painters--'].GetIndexes())
             mini["PhysicalOptions"]["Status"]=list(helpwindow['--status--'].GetIndexes())[0]
             mini["PhysicalOptions"]["Material"] = list(helpwindow['--material--'].GetIndexes())
-            mini["PhysicalOptions"]["Kitbash Sources"] = values['--kitSources--'].split()
+            mini["PhysicalOptions"]["Kitbash Sources"] = values['--kitSources--'].strip().split("\n")
+            while "" in mini["PhysicalOptions"]["Kitbash Sources"]:
+                mini["PhysicalOptions"]["Kitbash Sources"].remove("")
             mini["tags"]["enviromentTags"] = list(helpwindow['--enironments--'].GetIndexes())
             mini["tags"]["planeTags"] = list(helpwindow['--planes--'].GetIndexes())
             mini["tags"]["SizeTags"] = list(helpwindow['--sizes--'].GetIndexes())
@@ -721,7 +758,6 @@ while True:
         if filteredValues and ids:
             obj = filteredValues[ids[0]]
             mini = dictValues[obj.id]
-            print(obj.id)
             id = window["--list--"].GetIndexes()[0]
             dictValues[obj.id] = open_edit_window(mini, obj.id)
             save()
@@ -774,6 +810,18 @@ while True:
                 search(values["-IN-"])
                 window.Element("--list--").Update(filteredValues)
                 clear_values()
+    elif event == 'Stats':
+        link = values['Stats']
+        if link != "":
+            txt = export_stats(originalValues, "Stats")
+            with open(link, "w") as file1:
+                file1.write(txt)
+    elif event == 'Filtered Stats':
+        link = values['Filtered Stats']
+        if link != "":
+            txt = export_stats(filteredValues, f"Stats({values['-IN-']})")
+            with open(link, "w") as file1:
+                file1.write(txt)
 
     window.refresh()
 window.close()
